@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA39B251CB38CFD003B0ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B241CB38CFD003B0ECA /* main.m */; };
+		9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B271CB38CFD003B0ECA /* AppDelegate.m */; };
+		9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */; };
+		9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B321CB38CFD003B0ECA /* Assets.xcassets */; };
+		9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */; };
+		9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */; };
+		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
+		BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC44F051CCA1742007E3073 /* ChartsViewController.m */; };
+		BDC830F61CE2EA180015DB42 /* Index in Resources */ = {isa = PBXBuildFile; fileRef = BDC830F51CE2EA180015DB42 /* Index */; };
+		BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */; };
+		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
+		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
+		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
+		BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */; };
+		BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */; };
+		BDEDE1401CC9FC35003B3A09 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13F1CC9FC35003B3A09 /* Notes */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CA39B3D1CB38CFD003B0ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA39B181CB38CFD003B0ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA39B1F1CB38CFD003B0ECA;
+			remoteInfo = MasterRefresher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CA39B201CB38CFD003B0ECA /* Refresher-OBJC-OBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refresher-OBJC-OBJC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA39B241CB38CFD003B0ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CA39B261CB38CFD003B0ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CA39B271CB38CFD003B0ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CA39B301CB38CFD003B0ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CA39B321CB38CFD003B0ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA39B351CB38CFD003B0ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CA39B371CB38CFD003B0ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA39B3C1CB38CFD003B0ECA /* Refresher-OBJC-OBJC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refresher-OBJC-OBJC.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterRefresherTests.m; sourceTree = "<group>"; };
+		9CA39B421CB38CFD003B0ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA39B4D1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewRemoteLoadViewController.h; sourceTree = "<group>"; };
+		9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewRemoteLoadViewController.m; sourceTree = "<group>"; };
+		BDC44F041CCA1742007E3073 /* ChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
+		BDC44F051CCA1742007E3073 /* ChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
+		BDC830F51CE2EA180015DB42 /* Index */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Index; sourceTree = "<group>"; };
+		BDC830F81CE343C90015DB42 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		BDC831251CE358AB0015DB42 /* Refresher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Refresher.xcdatamodel; sourceTree = "<group>"; };
+		BDC8312B1CE3614F0015DB42 /* SimpleCoredataHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCoredataHomeViewController.h; sourceTree = "<group>"; };
+		BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCoredataHomeViewController.m; sourceTree = "<group>"; };
+		BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDetailViewController.h; sourceTree = "<group>"; };
+		BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDetailViewController.m; sourceTree = "<group>"; };
+		BDEDE13A1CC9F316003B3A09 /* WebViewLocalLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewLocalLoadViewController.h; sourceTree = "<group>"; };
+		BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewLocalLoadViewController.m; sourceTree = "<group>"; };
+		BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = localHtmlSample.html; sourceTree = "<group>"; };
+		BDEDE13F1CC9FC35003B3A09 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA39B1D1CB38CFD003B0ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA39B391CB38CFD003B0ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA39B171CB38CFD003B0ECA = {
+			isa = PBXGroup;
+			children = (
+				9CA39B221CB38CFD003B0ECA /* MasterRefresher */,
+				9CA39B3F1CB38CFD003B0ECA /* MasterRefresherTests */,
+				9CA39B211CB38CFD003B0ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA39B211CB38CFD003B0ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B201CB38CFD003B0ECA /* Refresher-OBJC-OBJC.app */,
+				9CA39B3C1CB38CFD003B0ECA /* Refresher-OBJC-OBJC.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA39B221CB38CFD003B0ECA /* MasterRefresher */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B261CB38CFD003B0ECA /* AppDelegate.h */,
+				9CA39B271CB38CFD003B0ECA /* AppDelegate.m */,
+				BDC830F51CE2EA180015DB42 /* Index */,
+				BDEDE13F1CC9FC35003B3A09 /* Notes */,
+				9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */,
+				BDC44F021CCA1689007E3073 /* Base */,
+				9CA39B4B1CB3A932003B0ECA /* UI and Libraries */,
+				9CA39B4C1CB3A94A003B0ECA /* Concepts */,
+				9CA39B231CB38CFD003B0ECA /* Supporting Files */,
+			);
+			path = MasterRefresher;
+			sourceTree = "<group>";
+		};
+		9CA39B231CB38CFD003B0ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B241CB38CFD003B0ECA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CA39B3F1CB38CFD003B0ECA /* MasterRefresherTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */,
+				9CA39B421CB38CFD003B0ECA /* Info.plist */,
+			);
+			path = MasterRefresherTests;
+			sourceTree = "<group>";
+		};
+		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BDC831271CE358BE0015DB42 /* CoreData */,
+				BDC830F71CE343A70015DB42 /* TableView */,
+				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
+				BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */,
+				BDC44F071CCA26AC007E3073 /* Barcode Reader */,
+			);
+			name = "UI and Libraries";
+			sourceTree = "<group>";
+		};
+		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
+			isa = PBXGroup;
+			children = (
+				BDC44F011CCA1640007E3073 /* Delegation */,
+				BDC44F001CCA1636007E3073 /* Singleton */,
+			);
+			name = Concepts;
+			sourceTree = "<group>";
+		};
+		BDC44EFE1CCA15D9007E3073 /* UI WebView */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B4D1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.h */,
+				9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */,
+				BDEDE13A1CC9F316003B3A09 /* WebViewLocalLoadViewController.h */,
+				BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */,
+				BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */,
+			);
+			name = "UI WebView";
+			sourceTree = "<group>";
+		};
+		BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				BDC44F041CCA1742007E3073 /* ChartsViewController.h */,
+				BDC44F051CCA1742007E3073 /* ChartsViewController.m */,
+			);
+			name = "Charts and Graphs";
+			sourceTree = "<group>";
+		};
+		BDC44F001CCA1636007E3073 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		BDC44F011CCA1640007E3073 /* Delegation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegation;
+			sourceTree = "<group>";
+		};
+		BDC44F021CCA1689007E3073 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */,
+				9CA39B321CB38CFD003B0ECA /* Assets.xcassets */,
+				9CA39B371CB38CFD003B0ECA /* Info.plist */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BDC44F071CCA26AC007E3073 /* Barcode Reader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Barcode Reader";
+			sourceTree = "<group>";
+		};
+		BDC830F71CE343A70015DB42 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BDC830F81CE343C90015DB42 /* SimpleTableViewController.h */,
+				BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		BDC831271CE358BE0015DB42 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BDC8312B1CE3614F0015DB42 /* SimpleCoredataHomeViewController.h */,
+				BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */,
+				BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */,
+				BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */,
+				BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA39B1F1CB38CFD003B0ECA /* Refresher-OBJC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA39B451CB38CFD003B0ECA /* Build configuration list for PBXNativeTarget "Refresher-OBJC" */;
+			buildPhases = (
+				9CA39B1C1CB38CFD003B0ECA /* Sources */,
+				9CA39B1D1CB38CFD003B0ECA /* Frameworks */,
+				9CA39B1E1CB38CFD003B0ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Refresher-OBJC";
+			productName = MasterRefresher;
+			productReference = 9CA39B201CB38CFD003B0ECA /* Refresher-OBJC-OBJC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CA39B3B1CB38CFD003B0ECA /* Refresher-OBJCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA39B481CB38CFD003B0ECA /* Build configuration list for PBXNativeTarget "Refresher-OBJCTests" */;
+			buildPhases = (
+				9CA39B381CB38CFD003B0ECA /* Sources */,
+				9CA39B391CB38CFD003B0ECA /* Frameworks */,
+				9CA39B3A1CB38CFD003B0ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA39B3E1CB38CFD003B0ECA /* PBXTargetDependency */,
+			);
+			name = "Refresher-OBJCTests";
+			productName = MasterRefresherTests;
+			productReference = 9CA39B3C1CB38CFD003B0ECA /* Refresher-OBJC-OBJC.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA39B181CB38CFD003B0ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ammini Inc";
+				TargetAttributes = {
+					9CA39B1F1CB38CFD003B0ECA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9CA39B3B1CB38CFD003B0ECA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9CA39B1F1CB38CFD003B0ECA;
+					};
+				};
+			};
+			buildConfigurationList = 9CA39B1B1CB38CFD003B0ECA /* Build configuration list for PBXProject "Refresher-OBJC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA39B171CB38CFD003B0ECA;
+			productRefGroup = 9CA39B211CB38CFD003B0ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA39B1F1CB38CFD003B0ECA /* Refresher-OBJC */,
+				9CA39B3B1CB38CFD003B0ECA /* Refresher-OBJCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA39B1E1CB38CFD003B0ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */,
+				BDEDE1401CC9FC35003B3A09 /* Notes in Resources */,
+				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
+				BDC830F61CE2EA180015DB42 /* Index in Resources */,
+				9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */,
+				9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA39B3A1CB38CFD003B0ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA39B1C1CB38CFD003B0ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
+				BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */,
+				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
+				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
+				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,
+				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
+				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
+				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
+				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA39B381CB38CFD003B0ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CA39B3E1CB38CFD003B0ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA39B1F1CB38CFD003B0ECA /* Refresher-OBJC */;
+			targetProxy = 9CA39B3D1CB38CFD003B0ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA39B301CB38CFD003B0ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA39B351CB38CFD003B0ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CA39B431CB38CFD003B0ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CA39B441CB38CFD003B0ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA39B461CB38CFD003B0ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MasterRefresher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresher;
+				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+			};
+			name = Debug;
+		};
+		9CA39B471CB38CFD003B0ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MasterRefresher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresher;
+				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+			};
+			name = Release;
+		};
+		9CA39B491CB38CFD003B0ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MasterRefresherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresherTests;
+				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refresher-OBJC.app/Refresher-OBJC";
+			};
+			name = Debug;
+		};
+		9CA39B4A1CB38CFD003B0ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MasterRefresherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresherTests;
+				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refresher-OBJC.app/Refresher-OBJC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA39B1B1CB38CFD003B0ECA /* Build configuration list for PBXProject "Refresher-OBJC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA39B431CB38CFD003B0ECA /* Debug */,
+				9CA39B441CB38CFD003B0ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA39B451CB38CFD003B0ECA /* Build configuration list for PBXNativeTarget "Refresher-OBJC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA39B461CB38CFD003B0ECA /* Debug */,
+				9CA39B471CB38CFD003B0ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA39B481CB38CFD003B0ECA /* Build configuration list for PBXNativeTarget "Refresher-OBJCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA39B491CB38CFD003B0ECA /* Debug */,
+				9CA39B4A1CB38CFD003B0ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDC831251CE358AB0015DB42 /* Refresher.xcdatamodel */,
+			);
+			currentVersion = BDC831251CE358AB0015DB42 /* Refresher.xcdatamodel */;
+			path = Refresher.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CA39B181CB38CFD003B0ECA /* Project object */;
+}
