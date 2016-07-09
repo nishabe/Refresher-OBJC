@@ -14,8 +14,8 @@
 		9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */; };
 		9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */; };
 		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
+		BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE7C1D30E5E700E0FA53 /* README.md */; };
 		BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC44F051CCA1742007E3073 /* ChartsViewController.m */; };
-		BDC830F61CE2EA180015DB42 /* Index in Resources */ = {isa = PBXBuildFile; fileRef = BDC830F51CE2EA180015DB42 /* Index */; };
 		BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */; };
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
@@ -49,9 +49,9 @@
 		9CA39B421CB38CFD003B0ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA39B4D1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewRemoteLoadViewController.h; sourceTree = "<group>"; };
 		9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewRemoteLoadViewController.m; sourceTree = "<group>"; };
+		BD83BE7C1D30E5E700E0FA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BDC44F041CCA1742007E3073 /* ChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
 		BDC44F051CCA1742007E3073 /* ChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
-		BDC830F51CE2EA180015DB42 /* Index */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Index; sourceTree = "<group>"; };
 		BDC830F81CE343C90015DB42 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		BDC831251CE358AB0015DB42 /* Refresher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Refresher.xcdatamodel; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			children = (
 				9CA39B261CB38CFD003B0ECA /* AppDelegate.h */,
 				9CA39B271CB38CFD003B0ECA /* AppDelegate.m */,
-				BDC830F51CE2EA180015DB42 /* Index */,
+				BD83BE7C1D30E5E700E0FA53 /* README.md */,
 				BDEDE13F1CC9FC35003B3A09 /* Notes */,
 				9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */,
 				BDC44F021CCA1689007E3073 /* Base */,
@@ -311,7 +311,6 @@
 				9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */,
 				BDEDE1401CC9FC35003B3A09 /* Notes in Resources */,
 				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
-				BDC830F61CE2EA180015DB42 /* Index in Resources */,
 				9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */,
 				9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */,
 			);
@@ -333,6 +332,7 @@
 			files = (
 				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
 				BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */,
+				BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,

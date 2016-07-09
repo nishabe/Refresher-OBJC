@@ -6,7 +6,7 @@ Add two tableview controllers to the main story board.
 Embedd each of these tableview contorollers in navigation controller.
 Create segue by contol+drag from the tableview controller to the newly created naviagtin contollers.
 Choose option 'view contollers' under 'Relation ship segue'
-The tab bar item text and icon can be customized from the connected navigation controllers.
+The tab bar item text and icon can be customized from the connected navigation controllers. To connect a view controller with the tab bar, just control drag from view controller to tab bar controller and select the option View Controllers from the pop up.
 
 
 Scrolling the static cells in story board:
