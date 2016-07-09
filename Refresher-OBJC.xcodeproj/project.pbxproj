@@ -15,6 +15,7 @@
 		9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */; };
 		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
 		BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE7C1D30E5E700E0FA53 /* README.md */; };
+		BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE851D3110CB00E0FA53 /* GCDViewController.m */; };
 		BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC44F051CCA1742007E3073 /* ChartsViewController.m */; };
 		BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */; };
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
@@ -50,6 +51,8 @@
 		9CA39B4D1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewRemoteLoadViewController.h; sourceTree = "<group>"; };
 		9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewRemoteLoadViewController.m; sourceTree = "<group>"; };
 		BD83BE7C1D30E5E700E0FA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BD83BE841D3110CB00E0FA53 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		BD83BE851D3110CB00E0FA53 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		BDC44F041CCA1742007E3073 /* ChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
 		BDC44F051CCA1742007E3073 /* ChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
 		BDC830F81CE343C90015DB42 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
@@ -149,10 +152,20 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
+				BD83BE831D3110B200E0FA53 /* GCD */,
 				BDC44F011CCA1640007E3073 /* Delegation */,
 				BDC44F001CCA1636007E3073 /* Singleton */,
 			);
 			name = Concepts;
+			sourceTree = "<group>";
+		};
+		BD83BE831D3110B200E0FA53 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				BD83BE841D3110CB00E0FA53 /* GCDViewController.h */,
+				BD83BE851D3110CB00E0FA53 /* GCDViewController.m */,
+			);
+			name = GCD;
 			sourceTree = "<group>";
 		};
 		BDC44EFE1CCA15D9007E3073 /* UI WebView */ = {
@@ -337,6 +350,7 @@
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,
 				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
+				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
