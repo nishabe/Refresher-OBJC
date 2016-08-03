@@ -70,6 +70,8 @@ TBD-1.NSURLSession Sammple
 TBD-2.NSURLConnection Sample  
 Asynchronous download and display of an image from web using NSURLConnection, save it locally  
 Asynchronous download and display of an image from web using NSURLSession, save it locally  
+TBD-3.SSL Pinning  
+Reference: https://github.com/doubleencore/de-SSLPinning
 #### DATA PERSISTENCE  
 TBD-1.NSUserDefaults Sample  
 TBD-2.KeyChain Storage Sample  
