@@ -1,5 +1,5 @@
 # Refresher-OBJC
-This is the one stop reference place for all the good things about Objective C.
+
 The project is intended to act as a catalogue for User Interface, Objective C Concepts and useful libraries.
 The purpose is not to include every minor aspects about Objective C, but to provide a simple reference material that comes handy during day today development related activities.
 
