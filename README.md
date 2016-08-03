@@ -1,7 +1,7 @@
 # Refresher-OBJC
 This is the one stop reference place for all the good things about Objective C.
-The project should act as a catalogue for User Interface, Objective C Concepts and useful libraries while implementing it.
-The purpose is not to include every minor aspects about ObjC in iOS, but to help a developer to have a headstart in day today activities by providing an easy reference material.
+The project is intended to act as a catalogue for User Interface, Objective C Concepts and useful libraries.
+The purpose is not to include every minor aspects about Objective C, but to provide a simple reference material that comes handy during day today development related activities.
 
 The topics are divided in to three. They are 1. UI Controls 2. Concepts 3. Libraries  
 #1. UI Controls  
