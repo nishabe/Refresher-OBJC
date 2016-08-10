@@ -2,7 +2,6 @@
 //  NotificationSample.m
 //  Refresher-OBJC
 //
-//  Created by Aneesh Abraham01 on 8/10/16.
 //  Copyright © 2016 Ammini Inc. All rights reserved.
 //
 
@@ -24,7 +23,6 @@
     for (int i=0; i<len; i++) {
         [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform([letters length])]];
     }
-    NSLog(@"randomString:%@",randomString);
     return randomString;
 }
 @end
