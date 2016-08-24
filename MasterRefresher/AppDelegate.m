@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MasterRefresher
 //
-//  Created by Aneesh on 05/04/16.
+//  Created by   on 05/04/16.
 //  Copyright © 2016 Ammini Inc. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(@"%s",__PRETTY_FUNCTION__);
     return YES;
 }
 
