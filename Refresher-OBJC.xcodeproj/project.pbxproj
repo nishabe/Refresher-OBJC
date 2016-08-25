@@ -14,6 +14,9 @@
 		9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */; };
 		9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */; };
 		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
+		BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C5CA81D6D655200A25C87 /* BlocksViewController.m */; };
+		BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C5CAB1D6D657900A25C87 /* BlockTester.m */; };
+		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE7C1D30E5E700E0FA53 /* README.md */; };
 		BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE851D3110CB00E0FA53 /* GCDViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
@@ -61,6 +64,12 @@
 		9CA39B421CB38CFD003B0ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA39B4D1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewRemoteLoadViewController.h; sourceTree = "<group>"; };
 		9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewRemoteLoadViewController.m; sourceTree = "<group>"; };
+		BD2C5CA71D6D655200A25C87 /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
+		BD2C5CA81D6D655200A25C87 /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
+		BD2C5CAA1D6D657900A25C87 /* BlockTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTester.h; sourceTree = "<group>"; };
+		BD2C5CAB1D6D657900A25C87 /* BlockTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTester.m; sourceTree = "<group>"; };
+		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
+		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD83BE7C1D30E5E700E0FA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD83BE841D3110CB00E0FA53 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		BD83BE851D3110CB00E0FA53 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
@@ -185,12 +194,26 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
+				BD2C5CA61D6D652D00A25C87 /* Blocks */,
 				BDC0147A1D5A1099007EEF90 /* Design Patterns */,
 				BD83BE831D3110B200E0FA53 /* GCD */,
 				BDC0146F1D59FA9A007EEF90 /* Category */,
 				BDC014761D5A0535007EEF90 /* Extension */,
 			);
 			name = Concepts;
+			sourceTree = "<group>";
+		};
+		BD2C5CA61D6D652D00A25C87 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				BD2C5CA71D6D655200A25C87 /* BlocksViewController.h */,
+				BD2C5CA81D6D655200A25C87 /* BlocksViewController.m */,
+				BD2C5CAA1D6D657900A25C87 /* BlockTester.h */,
+				BD2C5CAB1D6D657900A25C87 /* BlockTester.m */,
+				BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */,
+				BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */,
+			);
+			name = Blocks;
 			sourceTree = "<group>";
 		};
 		BD83BE831D3110B200E0FA53 /* GCD */ = {
@@ -443,6 +466,7 @@
 				BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */,
 				BDC0149E1D5B08E3007EEF90 /* NotificationViewController.m in Sources */,
 				BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */,
+				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
@@ -455,9 +479,11 @@
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
+				BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */,
 				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
+				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
 				BDC014821D5A15B2007EEF90 /* SampleProtocol.m in Sources */,
 				BDC014B91D5B2C2A007EEF90 /* KVCOViewController.m in Sources */,
 			);
