@@ -2,7 +2,7 @@
 //  KVCOViewController.m
 //  Refresher-OBJC
 //
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Copyright © 2016    Inc. All rights reserved.
 //
 
 #import "KVCOViewController.h"

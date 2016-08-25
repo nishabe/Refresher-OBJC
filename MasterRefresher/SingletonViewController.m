@@ -3,7 +3,7 @@
 //  Refresher-OBJC
 //
 //  Created by     on 8/10/16.
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Copyright © 2016    Inc. All rights reserved.
 //
 
 #import "SingletonViewController.h"

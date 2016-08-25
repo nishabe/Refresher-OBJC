@@ -2,7 +2,7 @@
 //  NSString+StringAdditions.m
 //  Refresher-OBJC
 //
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Copyright © 2016    Inc. All rights reserved.
 //
 
 #import "NSString+StringAdditions.h"
@@ -11,6 +11,6 @@
 @implementation NSString (StringAdditions)
 
 +(NSString *)getCopyRightString{
-    return @"Copyright © 2016 Ammini Inc. All rights reserved.";
+    return @"Copyright © 2016    Inc. All rights reserved.";
 }
 @end
