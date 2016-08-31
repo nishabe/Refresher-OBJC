@@ -553,10 +553,10 @@
             </objects>
             <point key="canvasLocation" x="2012" y="466"/>
         </scene>
-        <!--View Controller-->
+        <!--Method Swizzling View Controller-->
         <scene sceneID="Uio-nH-dos">
             <objects>
-                <viewController id="Q5d-3N-kLr" sceneMemberID="viewController">
+                <viewController id="Q5d-3N-kLr" customClass="MethodSwizzlingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dhU-I7-N3k"/>
                         <viewControllerLayoutGuide type="bottom" id="Er2-NZ-ySK"/>
@@ -564,8 +564,25 @@
                     <view key="view" contentMode="scaleToFill" id="5ht-lt-Mhc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your income here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6G-8v-4Rr">
+                                <rect key="frame" x="20" y="72" width="194" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-re-YCC">
+                                <rect key="frame" x="93" y="122" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="didTapOnSubmit:" destination="Q5d-3N-kLr" eventType="touchUpInside" id="deq-a2-dRd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="income" destination="S6G-8v-4Rr" id="3R0-zr-Gpk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzL-aI-oXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

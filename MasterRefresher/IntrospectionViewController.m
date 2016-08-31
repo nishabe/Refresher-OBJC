@@ -6,7 +6,7 @@
 //  Copyright © 2016    Inc. All rights reserved.
 //
 
-//#import <objc/runtime.h>
+#import <objc/runtime.h>
 #import <objc/message.h>
 
 #import "IntrospectionViewController.h"

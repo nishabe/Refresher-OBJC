@@ -16,6 +16,10 @@
 		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
 		BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C5CA81D6D655200A25C87 /* BlocksViewController.m */; };
 		BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C5CAB1D6D657900A25C87 /* BlockTester.m */; };
+		BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */; };
+		BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230371D75760000BA1EA8 /* TaxProcessor.m */; };
+		BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */; };
+		BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303D1D76A72A00BA1EA8 /* UIViewController+Tracking.m */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -70,6 +74,14 @@
 		BD2C5CA81D6D655200A25C87 /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
 		BD2C5CAA1D6D657900A25C87 /* BlockTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTester.h; sourceTree = "<group>"; };
 		BD2C5CAB1D6D657900A25C87 /* BlockTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTester.m; sourceTree = "<group>"; };
+		BD5230331D75730A00BA1EA8 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
+		BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
+		BD5230361D75760000BA1EA8 /* TaxProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxProcessor.h; sourceTree = "<group>"; };
+		BD5230371D75760000BA1EA8 /* TaxProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxProcessor.m; sourceTree = "<group>"; };
+		BD5230391D7576B100BA1EA8 /* TaxProcessor+Snoopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaxProcessor+Snoopy.h"; sourceTree = "<group>"; };
+		BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaxProcessor+Snoopy.m"; sourceTree = "<group>"; };
+		BD52303C1D76A72A00BA1EA8 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		BD52303D1D76A72A00BA1EA8 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -232,6 +244,14 @@
 				BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */,
 				BD5DB5C31D6F65EB0012F7E4 /* SecretMission.h */,
 				BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */,
+				BD5230331D75730A00BA1EA8 /* MethodSwizzlingViewController.h */,
+				BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */,
+				BD5230361D75760000BA1EA8 /* TaxProcessor.h */,
+				BD5230371D75760000BA1EA8 /* TaxProcessor.m */,
+				BD5230391D7576B100BA1EA8 /* TaxProcessor+Snoopy.h */,
+				BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */,
+				BD52303C1D76A72A00BA1EA8 /* UIViewController+Tracking.h */,
+				BD52303D1D76A72A00BA1EA8 /* UIViewController+Tracking.m */,
 			);
 			name = ObjCRuntime;
 			sourceTree = "<group>";
@@ -486,6 +506,7 @@
 				BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */,
 				BDC0149E1D5B08E3007EEF90 /* NotificationViewController.m in Sources */,
 				BD83BE7D1D30E5E700E0FA53 /* README.md in Sources */,
+				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
 				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
@@ -495,7 +516,9 @@
 				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
 				BDC014B61D5B2C05007EEF90 /* Student.m in Sources */,
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
+				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
+				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
@@ -508,6 +531,7 @@
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
 				BDC014821D5A15B2007EEF90 /* SampleProtocol.m in Sources */,
 				BDC014B91D5B2C2A007EEF90 /* KVCOViewController.m in Sources */,
+				BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
