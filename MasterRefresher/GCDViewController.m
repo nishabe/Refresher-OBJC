@@ -7,6 +7,7 @@
 //
 
 #import "GCDViewController.h"
+#import "RefresherConstants.h"
 
 @interface Downloader : NSObject
 +(UIImage*) downloadImageWithURL: (NSString*) url;
@@ -84,10 +85,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     imageURLs = [NSArray arrayWithObjects:
-                 @"http://www.planetware.com/photos-large/F/france-paris-eiffel-tower.jpg",
-                 @"http://adriatic-lines.com/wp-content/uploads/2015/04/canal-of-Venice.jpg",
-                 @"http://algoos.com/wp-content/uploads/2015/08/ireland-02.jpg",
-                 @"http://bdo.se/wp-content/uploads/2014/01/Stockholm1.jpg"
+                 SAMPLE_IMAGE_URL1,
+                 SAMPLE_IMAGE_URL2,
+                 SAMPLE_IMAGE_URL3,
+                 SAMPLE_IMAGE_URL4
                  , nil];
     imageViews = [NSArray arrayWithObjects:imageView1,imageView2,imageView3,imageView4, nil];
 }

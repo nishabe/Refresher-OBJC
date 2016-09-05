@@ -588,6 +588,79 @@
             </objects>
             <point key="canvasLocation" x="2042" y="526"/>
         </scene>
+        <!--Operation Queue View Controller-->
+        <scene sceneID="pmj-Ah-0zd">
+            <objects>
+                <viewController id="iz5-es-6Xr" customClass="OperationQueueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ec-sg-X9s"/>
+                        <viewControllerLayoutGuide type="bottom" id="PAd-er-3Vc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QmE-u6-2yX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Using Concrete NSOperation Classes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odP-1N-Zm2">
+                                <rect key="frame" x="20" y="89" width="286" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subclassing NSOperation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-3u-SIe">
+                                <rect key="frame" x="13" y="246" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOn-c2-GV6">
+                                <rect key="frame" x="22" y="201" width="177" height="30"/>
+                                <state key="normal" title="3.AddOperationWithBlock"/>
+                                <connections>
+                                    <action selector="didTapOnAddOperationWithBlock:" destination="iz5-es-6Xr" eventType="touchUpInside" id="4Ty-ma-x3K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-is-Y3d">
+                                <rect key="frame" x="22" y="163" width="139" height="30"/>
+                                <state key="normal" title="2.NSBlockOperation"/>
+                                <connections>
+                                    <action selector="didTapOnBlockOperationButton:" destination="iz5-es-6Xr" eventType="touchUpInside" id="VUW-EF-ubJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb6-rC-nIB">
+                                <rect key="frame" x="19" y="271" width="245" height="30"/>
+                                <state key="normal" title="1.NSOperation - Non-asynchronous"/>
+                                <connections>
+                                    <action selector="didTapOnNonAsyncButton:" destination="iz5-es-6Xr" eventType="touchUpInside" id="o6R-Fo-K0D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih3-kG-d7U">
+                                <rect key="frame" x="22" y="304" width="212" height="30"/>
+                                <state key="normal" title="2.NSOperation - asynchronous"/>
+                                <connections>
+                                    <action selector="didTapOnAsyncButton:" destination="iz5-es-6Xr" eventType="touchUpInside" id="ht4-yz-uvj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgh-cR-p2O">
+                                <rect key="frame" x="24" y="342" width="217" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-Xn-Oie">
+                                <rect key="frame" x="22" y="125" width="169" height="30"/>
+                                <state key="normal" title="1.NSInvocationOperation"/>
+                                <connections>
+                                    <action selector="didTapOnInvocationOperationButton:" destination="iz5-es-6Xr" eventType="touchUpInside" id="nTg-c9-Ocn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="sgh-cR-p2O" id="xHP-NK-62o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBs-AG-5Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091" y="567"/>
+        </scene>
         <!--Web View Local Load View Controller-->
         <scene sceneID="9d1-CG-IWK">
             <objects>
@@ -1091,6 +1164,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="iz5-es-6Xr" kind="show" id="dSU-kt-D4S"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1Lo-H1-8nA" detailTextLabel="8oZ-dG-9Ma" style="IBUITableViewCellStyleValue1" id="XVA-Fm-TVK">
                                         <rect key="frame" x="0.0" y="277" width="600" height="44"/>
@@ -1347,38 +1423,14 @@
                                             <segue destination="bfY-GW-lm3" kind="show" id="kEs-vU-hq1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Pki-BU-8d6" detailTextLabel="2yM-1L-qrt" style="IBUITableViewCellStyleValue1" id="f3q-Cq-m9Z">
-                                        <rect key="frame" x="0.0" y="826" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f3q-Cq-m9Z" id="bAT-it-ku3">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2. Reflection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pki-BU-8d6">
-                                                    <rect key="frame" x="15" y="12" width="91" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2yM-1L-qrt">
-                                                    <rect key="frame" x="523" y="12" width="42" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7v5-se-XVR" detailTextLabel="t6Q-6P-hSm" style="IBUITableViewCellStyleValue1" id="SdT-IS-5x7">
-                                        <rect key="frame" x="0.0" y="870" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="826" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SdT-IS-5x7" id="qaw-fQ-v32">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3. Swizzling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7v5-se-XVR">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2. Swizzling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7v5-se-XVR">
                                                     <rect key="frame" x="15" y="12" width="86" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>

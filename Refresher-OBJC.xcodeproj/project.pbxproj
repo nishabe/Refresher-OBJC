@@ -20,6 +20,9 @@
 		BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230371D75760000BA1EA8 /* TaxProcessor.m */; };
 		BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */; };
 		BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303D1D76A72A00BA1EA8 /* UIViewController+Tracking.m */; };
+		BD5230421D784E5800BA1EA8 /* OperationQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230411D784E5800BA1EA8 /* OperationQueueViewController.m */; };
+		BD5230451D7D875200BA1EA8 /* NonConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230441D7D875200BA1EA8 /* NonConCurrentOperation.m */; };
+		BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -82,6 +85,14 @@
 		BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaxProcessor+Snoopy.m"; sourceTree = "<group>"; };
 		BD52303C1D76A72A00BA1EA8 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		BD52303D1D76A72A00BA1EA8 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		BD5230401D784E5800BA1EA8 /* OperationQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationQueueViewController.h; sourceTree = "<group>"; };
+		BD5230411D784E5800BA1EA8 /* OperationQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationQueueViewController.m; sourceTree = "<group>"; };
+		BD5230431D7D875200BA1EA8 /* NonConCurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConCurrentOperation.h; sourceTree = "<group>"; };
+		BD5230441D7D875200BA1EA8 /* NonConCurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonConCurrentOperation.m; sourceTree = "<group>"; };
+		BD5230461D7DDA1000BA1EA8 /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentOperation.h; sourceTree = "<group>"; };
+		BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentOperation.m; sourceTree = "<group>"; };
+		BD5230491D7DDD4A00BA1EA8 /* NonConCurrentOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConCurrentOperationDelegate.h; sourceTree = "<group>"; };
+		BD52305B1D7DE48300BA1EA8 /* RefresherConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefresherConstants.h; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -174,6 +185,7 @@
 				BD83BE7C1D30E5E700E0FA53 /* README.md */,
 				BDEDE13F1CC9FC35003B3A09 /* Notes */,
 				9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */,
+				BD52305B1D7DE48300BA1EA8 /* RefresherConstants.h */,
 				BDC44F021CCA1689007E3073 /* Base */,
 				9CA39B4B1CB3A932003B0ECA /* UI and Libraries */,
 				9CA39B4C1CB3A94A003B0ECA /* Concepts */,
@@ -214,6 +226,7 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
+				BD52303F1D783D8F00BA1EA8 /* OperationQueue */,
 				BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */,
 				BD2C5CA61D6D652D00A25C87 /* Blocks */,
 				BDC0147A1D5A1099007EEF90 /* Design Patterns */,
@@ -235,6 +248,20 @@
 				BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */,
 			);
 			name = Blocks;
+			sourceTree = "<group>";
+		};
+		BD52303F1D783D8F00BA1EA8 /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				BD5230401D784E5800BA1EA8 /* OperationQueueViewController.h */,
+				BD5230411D784E5800BA1EA8 /* OperationQueueViewController.m */,
+				BD5230431D7D875200BA1EA8 /* NonConCurrentOperation.h */,
+				BD5230441D7D875200BA1EA8 /* NonConCurrentOperation.m */,
+				BD5230461D7DDA1000BA1EA8 /* ConcurrentOperation.h */,
+				BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */,
+				BD5230491D7DDD4A00BA1EA8 /* NonConCurrentOperationDelegate.h */,
+			);
+			name = OperationQueue;
 			sourceTree = "<group>";
 		};
 		BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */ = {
@@ -515,6 +542,7 @@
 				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,
 				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
 				BDC014B61D5B2C05007EEF90 /* Student.m in Sources */,
+				BD5230421D784E5800BA1EA8 /* OperationQueueViewController.m in Sources */,
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
@@ -522,11 +550,13 @@
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
+				BD5230451D7D875200BA1EA8 /* NonConCurrentOperation.m in Sources */,
 				BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */,
 				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
 				BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
+				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
 				BDC014821D5A15B2007EEF90 /* SampleProtocol.m in Sources */,
