@@ -23,6 +23,8 @@
 		BD5230421D784E5800BA1EA8 /* OperationQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230411D784E5800BA1EA8 /* OperationQueueViewController.m */; };
 		BD5230451D7D875200BA1EA8 /* NonConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230441D7D875200BA1EA8 /* NonConCurrentOperation.m */; };
 		BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */; };
+		BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */; };
+		BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -93,6 +95,10 @@
 		BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcurrentOperation.m; sourceTree = "<group>"; };
 		BD5230491D7DDD4A00BA1EA8 /* NonConCurrentOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConCurrentOperationDelegate.h; sourceTree = "<group>"; };
 		BD52305B1D7DE48300BA1EA8 /* RefresherConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefresherConstants.h; sourceTree = "<group>"; };
+		BD52305F1D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCommunicationViewController.h; sourceTree = "<group>"; };
+		BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCommunicationViewController.m; sourceTree = "<group>"; };
+		BD5230621D7DF07600BA1EA8 /* NetworkCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCommunication.h; sourceTree = "<group>"; };
+		BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCommunication.m; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -226,6 +232,7 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
+				BD52305E1D7DEE5A00BA1EA8 /* NetworkCommunication */,
 				BD52303F1D783D8F00BA1EA8 /* OperationQueue */,
 				BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */,
 				BD2C5CA61D6D652D00A25C87 /* Blocks */,
@@ -262,6 +269,17 @@
 				BD5230491D7DDD4A00BA1EA8 /* NonConCurrentOperationDelegate.h */,
 			);
 			name = OperationQueue;
+			sourceTree = "<group>";
+		};
+		BD52305E1D7DEE5A00BA1EA8 /* NetworkCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				BD52305F1D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.h */,
+				BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */,
+				BD5230621D7DF07600BA1EA8 /* NetworkCommunication.h */,
+				BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */,
+			);
+			name = NetworkCommunication;
 			sourceTree = "<group>";
 		};
 		BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */ = {
@@ -536,6 +554,7 @@
 				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
 				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
+				BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				BDC014A11D5B0902007EEF90 /* NotificationSample.m in Sources */,
@@ -547,6 +566,7 @@
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
+				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,

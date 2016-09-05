@@ -661,6 +661,58 @@
             </objects>
             <point key="canvasLocation" x="2091" y="567"/>
         </scene>
+        <!--Network Communication View Controller-->
+        <scene sceneID="0bF-3q-ZZr">
+            <objects>
+                <viewController id="gXf-W8-gEa" customClass="NetworkCommunicationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DNP-an-8a6"/>
+                        <viewControllerLayoutGuide type="bottom" id="IPc-yB-uHE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CF6-Ib-79W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NSURLConnection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erx-To-dWC">
+                                <rect key="frame" x="20" y="92" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NSURLSession" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwK-u2-XTy">
+                                <rect key="frame" x="20" y="232" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP2-Bk-XGf">
+                                <rect key="frame" x="20" y="132" width="134" height="30"/>
+                                <state key="normal" title="1. Asyncronous Call"/>
+                                <connections>
+                                    <action selector="didTapOnAsyncronousButton:" destination="gXf-W8-gEa" eventType="touchUpInside" id="08U-FT-Fd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIO-S8-S1Q">
+                                <rect key="frame" x="20" y="183" width="128" height="30"/>
+                                <state key="normal" title="2. Syncronous Call"/>
+                                <connections>
+                                    <action selector="didTapOnSyncronousButton:" destination="gXf-W8-gEa" eventType="touchUpInside" id="X9F-j4-O27"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxv-Zw-0TB">
+                                <rect key="frame" x="20" y="305" width="210" height="201"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="sxv-Zw-0TB" id="6No-aN-tzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krd-KV-kOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2138" y="632"/>
+        </scene>
         <!--Web View Local Load View Controller-->
         <scene sceneID="9d1-CG-IWK">
             <objects>
@@ -1175,8 +1227,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3. BLOCKS EXPLAINED WITH CONSOLE O/P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lo-H1-8nA">
-                                                    <rect key="frame" x="15" y="12" width="323" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3. BLOCKS EXPLAINED IN CONSOLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lo-H1-8nA">
+                                                    <rect key="frame" x="15" y="12" width="267" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1448,6 +1500,37 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Q5d-3N-kLr" kind="show" id="qmm-OW-ilA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="NETWORK COMMUNICATION" id="6aT-wO-awb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="nQs-4Q-wAN" detailTextLabel="QIy-Uf-PsR" style="IBUITableViewCellStyleValue1" id="ECx-2r-7R8">
+                                        <rect key="frame" x="0.0" y="921" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ECx-2r-7R8" id="gXp-yR-Bav">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1. NSURLCONNECTION &amp; NSURLSESSION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nQs-4Q-wAN">
+                                                    <rect key="frame" x="15" y="12" width="309" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QIy-Uf-PsR">
+                                                    <rect key="frame" x="523" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gXf-W8-gEa" kind="show" id="I2o-WF-VVP"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
