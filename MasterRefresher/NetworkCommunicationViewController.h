@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NonConCurrentOperationDelegate.h"
+#import "NetworkOperationDelegate.h"
 
-@interface NetworkCommunicationViewController : UIViewController <NonConCurrentOperationDelegate>
+@interface NetworkCommunicationViewController : UIViewController <NetworkOperationDelegate,UIDocumentInteractionControllerDelegate>
 
 @end

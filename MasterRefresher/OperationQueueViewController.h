@@ -10,6 +10,6 @@
 #import "NonConCurrentOperation.h"
 #import "ConcurrentOperation.h"
 
-@interface OperationQueueViewController : UIViewController <NonConCurrentOperationDelegate>
+@interface OperationQueueViewController : UIViewController <NetworkOperationDelegate>
 
 @end

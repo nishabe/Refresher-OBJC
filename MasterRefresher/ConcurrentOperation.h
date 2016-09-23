@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NonConCurrentOperationDelegate.h"
+#import "NetworkOperationDelegate.h"
 
 @interface ConcurrentOperation : NSOperation
 {
     BOOL        executing;
     BOOL        finished;
 }
-@property (nonatomic, assign) id <NonConCurrentOperationDelegate>delegate;
+@property (nonatomic, assign) id <NetworkOperationDelegate>delegate;
 
 - (id)initWithRootURL:(NSURL *)url;
 - (void)completeOperation;

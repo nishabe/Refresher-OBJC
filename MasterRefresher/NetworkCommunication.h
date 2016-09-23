@@ -7,13 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NonConCurrentOperationDelegate.h"
+#import "NetworkOperationDelegate.h"
 
-@interface NetworkCommunication : NSObject
-@property (nonatomic, assign) id <NonConCurrentOperationDelegate>delegate;
+@interface NetworkCommunication : NSObject <NSURLSessionDelegate>
+@property (nonatomic, assign) id <NetworkOperationDelegate>delegate;
 @property (nonatomic, retain) NSURL *urlToLoad;
+@property (nonatomic, retain) NSURLSessionDownloadTask *downloadTask;
+@property (nonatomic, retain) NSURLSessionUploadTask *uploadTask;
+
+
 - (id)initWithRootURL:(NSURL *)url;
-- (void)startAsyncDownload;
 - (void)startSyncDownload;
+- (void)startAsyncDownloadWithDelegate;
+- (void)startAsyncDownloadWithBlock;
+- (void)startDataTask;
+- (void)startImageDownloadTask;
+- (void)startFileDownloadTask;
+- (void)startBackgroundFileDownloadTask;
+- (void)startFileUploadTask;
+
+
+-(void)pauseDownloadTask;
+-(void)cancelDownloadTask;
 
 @end

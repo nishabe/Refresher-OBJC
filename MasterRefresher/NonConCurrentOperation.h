@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NonConCurrentOperationDelegate.h"
+#import "NetworkOperationDelegate.h"
 
 @interface NonConCurrentOperation : NSOperation
 - (id)initWithRootURL:(NSURL *)url;
 
-@property (nonatomic, assign) id <NonConCurrentOperationDelegate>delegate;
+@property (nonatomic, assign) id <NetworkOperationDelegate>delegate;
 
 @end
