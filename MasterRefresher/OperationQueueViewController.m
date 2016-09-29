@@ -69,9 +69,6 @@
 # pragma mark - Non asyncronous Operation
 
 - (IBAction)didTapOnNonAsyncButton:(id)sender {
-    /*
-    
-     */
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
     // The maximum number of queued operations that can execute at the same time.
     [queue setMaxConcurrentOperationCount:3];

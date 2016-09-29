@@ -39,7 +39,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     self.webView.hidden=NO;
     [self.activityIndicator stopAnimating];
-
 }
 
 - (void)didReceiveMemoryWarning {

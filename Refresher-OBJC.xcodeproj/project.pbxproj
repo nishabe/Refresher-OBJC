@@ -188,15 +188,13 @@
 		9CA39B221CB38CFD003B0ECA /* Refresher */ = {
 			isa = PBXGroup;
 			children = (
-				9CA39B261CB38CFD003B0ECA /* AppDelegate.h */,
-				9CA39B271CB38CFD003B0ECA /* AppDelegate.m */,
-				BD734AE11D92427B00D8C0F7 /* AppModel */,
-				BD734ADE1D9241F600D8C0F7 /* AppView */,
-				BD734AE31D9242DF00D8C0F7 /* AppController */,
-				BD734AE01D92425900D8C0F7 /* AppConfiguration */,
-				BD734ADF1D92420300D8C0F7 /* AppResources */,
-				BD734AE51D9243DA00D8C0F7 /* AppSupporingFiles */,
-				BD734AE41D92430C00D8C0F7 /* Libraries */,
+				BD734ADE1D9241F600D8C0F7 /* View */,
+				BD734AE11D92427B00D8C0F7 /* Model */,
+				BD734AE31D9242DF00D8C0F7 /* Controller */,
+				BD734ADF1D92420300D8C0F7 /* Resources */,
+				BD734AE01D92425900D8C0F7 /* Configuration */,
+				BD734AE51D9243DA00D8C0F7 /* Supporing Files */,
+				BD734AE41D92430C00D8C0F7 /* External Libraries */,
 			);
 			name = Refresher;
 			path = MasterRefresher;
@@ -295,58 +293,60 @@
 			name = ObjCRuntime;
 			sourceTree = "<group>";
 		};
-		BD734ADE1D9241F600D8C0F7 /* AppView */ = {
+		BD734ADE1D9241F600D8C0F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */,
 				9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */,
 			);
-			name = AppView;
+			name = View;
 			sourceTree = "<group>";
 		};
-		BD734ADF1D92420300D8C0F7 /* AppResources */ = {
+		BD734ADF1D92420300D8C0F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */,
 				9CA39B321CB38CFD003B0ECA /* Assets.xcassets */,
 			);
-			name = AppResources;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		BD734AE01D92425900D8C0F7 /* AppConfiguration */ = {
+		BD734AE01D92425900D8C0F7 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				9CA39B371CB38CFD003B0ECA /* Info.plist */,
 			);
-			name = AppConfiguration;
+			name = Configuration;
 			sourceTree = "<group>";
 		};
-		BD734AE11D92427B00D8C0F7 /* AppModel */ = {
+		BD734AE11D92427B00D8C0F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BD52305B1D7DE48300BA1EA8 /* RefresherConstants.h */,
 			);
-			name = AppModel;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		BD734AE31D9242DF00D8C0F7 /* AppController */ = {
+		BD734AE31D9242DF00D8C0F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9CA39B261CB38CFD003B0ECA /* AppDelegate.h */,
+				9CA39B271CB38CFD003B0ECA /* AppDelegate.m */,
 				9CA39B4B1CB3A932003B0ECA /* UI and Libraries */,
 				9CA39B4C1CB3A94A003B0ECA /* Concepts */,
 			);
-			name = AppController;
+			name = Controller;
 			sourceTree = "<group>";
 		};
-		BD734AE41D92430C00D8C0F7 /* Libraries */ = {
+		BD734AE41D92430C00D8C0F7 /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				BD5DB5C61D6F6AE60012F7E4 /* libobjc.tbd */,
 			);
-			name = Libraries;
+			name = "External Libraries";
 			sourceTree = "<group>";
 		};
-		BD734AE51D9243DA00D8C0F7 /* AppSupporingFiles */ = {
+		BD734AE51D9243DA00D8C0F7 /* Supporing Files */ = {
 			isa = PBXGroup;
 			children = (
 				9CA39B241CB38CFD003B0ECA /* main.m */,
@@ -354,7 +354,7 @@
 				BD83BE7C1D30E5E700E0FA53 /* README.md */,
 				BDEDE13F1CC9FC35003B3A09 /* Notes */,
 			);
-			name = AppSupporingFiles;
+			name = "Supporing Files";
 			sourceTree = "<group>";
 		};
 		BD83BE831D3110B200E0FA53 /* GCD */ = {

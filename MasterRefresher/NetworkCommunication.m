@@ -120,7 +120,7 @@
 -(void)cancelDownloadTask{
     [self.downloadTask cancel];
 }
-#pragma mark - NSURLCOnnection Delegates
+#pragma mark - NSURLConnection Delegates
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     [_responseData setLength:0];
