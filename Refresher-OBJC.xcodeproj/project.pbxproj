@@ -47,6 +47,7 @@
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
 		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
+		BDED62051D9CCCE40067AA38 /* MKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED62041D9CCCE40067AA38 /* MKWebViewController.m */; };
 		BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */; };
 		BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */; };
 		BDEDE1401CC9FC35003B3A09 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13F1CC9FC35003B3A09 /* Notes */; };
@@ -143,6 +144,8 @@
 		BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCoredataHomeViewController.m; sourceTree = "<group>"; };
 		BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDetailViewController.h; sourceTree = "<group>"; };
 		BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDetailViewController.m; sourceTree = "<group>"; };
+		BDED62031D9CCCE40067AA38 /* MKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWebViewController.h; sourceTree = "<group>"; };
+		BDED62041D9CCCE40067AA38 /* MKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWebViewController.m; sourceTree = "<group>"; };
 		BDEDE13A1CC9F316003B3A09 /* WebViewLocalLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewLocalLoadViewController.h; sourceTree = "<group>"; };
 		BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewLocalLoadViewController.m; sourceTree = "<group>"; };
 		BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = localHtmlSample.html; sourceTree = "<group>"; };
@@ -213,9 +216,10 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
+				BDED62021D9CCCA60067AA38 /* MKWebView */,
 				BDC831271CE358BE0015DB42 /* CoreData */,
 				BDC830F71CE343A70015DB42 /* TableView */,
-				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
 				BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */,
 			);
 			name = "UI and Libraries";
@@ -483,6 +487,15 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		BDED62021D9CCCA60067AA38 /* MKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				BDED62031D9CCCE40067AA38 /* MKWebViewController.h */,
+				BDED62041D9CCCE40067AA38 /* MKWebViewController.m */,
+			);
+			name = MKWebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -621,6 +634,7 @@
 				BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
+				BDED62051D9CCCE40067AA38 /* MKWebViewController.m in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
