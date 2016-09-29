@@ -6,17 +6,17 @@
 Reference:
  http://www.appcoda.com/webkit-framework-intro/
 */
-#import "MKWebViewController.h"
+#import "WKWebViewController.h"
 #define URL_1 @"https://www.google.com/#q=2016"
 #define URL_2 @"http://www.appcoda.com"
 
-@interface MKWebViewController ()
+@interface WKWebViewController ()
 @property(strong,nonatomic) WKWebView *webView;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
 @end
 
-@implementation MKWebViewController
+@implementation WKWebViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -913,7 +912,7 @@
         <!--Web View Controller-->
         <scene sceneID="ogn-8m-lxT">
             <objects>
-                <viewController id="X4T-NT-yfg" customClass="MKWebViewController" sceneMemberID="viewController">
+                <viewController id="X4T-NT-yfg" customClass="WKWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P4d-rc-xSu"/>
                         <viewControllerLayoutGuide type="bottom" id="ePT-Vc-TXD"/>
