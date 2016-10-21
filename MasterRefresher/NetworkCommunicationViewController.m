@@ -117,7 +117,7 @@
 - (IBAction)didTapFileUpload:(id)sender {
     /*
      1. Find your server IP/name and replace the macro definition on top.
-     2. Run postserver.py script after updating the server IP/name (Line #73,postserver.py)
+     2. Run postserver.py script after updating the server IP/name (Line #73,postserver.py). CD in to the folder where you have the script in terminal and then execute it as: python postserver.py
      3.Run this source code only after performing the above two steps
      */
     NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:%@", SERVRER_IP, SERVER_PORT]];

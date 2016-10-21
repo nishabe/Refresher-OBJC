@@ -67,13 +67,13 @@ Reference:
     NSLog(@"Started loading");
 }
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
-    NSLog(@"Load Error");
-}
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+    NSLog(@"Load Error:%@",error);}
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
     NSLog(@"Et:progress->%f",webView.estimatedProgress);
 }
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
-    NSLog(@"Load Error");
-}
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+    NSLog(@"Load Error:%@",error);}
 @end
