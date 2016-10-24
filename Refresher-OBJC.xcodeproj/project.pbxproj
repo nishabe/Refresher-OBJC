@@ -19,6 +19,7 @@
 		BD2F039B1DB8DD4100163180 /* ScrollViewSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F039A1DB8DD4100163180 /* ScrollViewSampleViewController.m */; };
 		BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */; };
 		BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */; };
+		BD42E6C61DBE039F007C3F5D /* GestureRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */; };
 		BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */; };
 		BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230371D75760000BA1EA8 /* TaxProcessor.m */; };
 		BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */; };
@@ -90,6 +91,8 @@
 		BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
 		BD2F03A01DBA276C00163180 /* KeyboardHandlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHandlingViewController.h; sourceTree = "<group>"; };
 		BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandlingViewController.m; sourceTree = "<group>"; };
+		BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognitionViewController.h; sourceTree = "<group>"; };
+		BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognitionViewController.m; sourceTree = "<group>"; };
 		BD5230331D75730A00BA1EA8 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
 		BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
 		BD5230361D75760000BA1EA8 /* TaxProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxProcessor.h; sourceTree = "<group>"; };
@@ -225,6 +228,7 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BD2F03A31DBDF6AA00163180 /* UI Controls */,
 				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
 				BDED62021D9CCCA60067AA38 /* WKWebView */,
 				BDC830F71CE343A70015DB42 /* TableView */,
@@ -282,6 +286,15 @@
 				BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */,
 			);
 			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		BD2F03A31DBDF6AA00163180 /* UI Controls */ = {
+			isa = PBXGroup;
+			children = (
+				BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */,
+				BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */,
+			);
+			name = "UI Controls";
 			sourceTree = "<group>";
 		};
 		BD52303F1D783D8F00BA1EA8 /* OperationQueue */ = {
@@ -672,6 +685,7 @@
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
+				BD42E6C61DBE039F007C3F5D /* GestureRecognitionViewController.m in Sources */,
 				BDC014821D5A15B2007EEF90 /* SampleProtocol.m in Sources */,
 				BDC014B91D5B2C2A007EEF90 /* KVCOViewController.m in Sources */,
 				BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */,
