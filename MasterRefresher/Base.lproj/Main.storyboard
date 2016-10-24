@@ -176,8 +176,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1. Adding input accessory view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A9t-3j-Ylc">
-                                                    <rect key="frame" x="15" y="12" width="223" height="20"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1. KB dismissal, input accessory view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A9t-3j-Ylc">
+                                                    <rect key="frame" x="15" y="12" width="268" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -192,6 +192,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AoT-Vc-kN5" kind="show" id="ngt-2K-lAq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1008,6 +1011,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LU4-sW-LUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1502" y="-1182"/>
+        </scene>
+        <!--Keyboard Handling View Controller-->
+        <scene sceneID="r4J-KW-uKc">
+            <objects>
+                <viewController id="AoT-Vc-kN5" customClass="KeyboardHandlingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZaB-xb-tE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="YbW-MH-5pe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BoJ-Bg-ZzH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7H-SN-NMR">
+                                <rect key="frame" x="20" y="110" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="ScF-Qt-7dF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AoT-Vc-kN5" id="Gmp-yU-V2D"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Second Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-vb-Zpk">
+                                <rect key="frame" x="20" y="160" width="145" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AoT-Vc-kN5" id="uGV-dB-vKZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="leading" secondItem="BoJ-Bg-ZzH" secondAttribute="leadingMargin" constant="3" id="65i-3B-iHY"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="top" secondItem="ZaB-xb-tE9" secondAttribute="bottom" constant="46" id="9Oz-uu-Igt"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="leading" secondItem="BoJ-Bg-ZzH" secondAttribute="leadingMargin" constant="3" id="IuY-pR-kEX"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="leading" secondItem="BoJ-Bg-ZzH" secondAttribute="leadingMargin" id="Mzk-K6-xiS"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="centerY" secondItem="BoJ-Bg-ZzH" secondAttribute="centerY" id="NGw-zt-mVB"/>
+                            <constraint firstItem="vgq-vb-Zpk" firstAttribute="leading" secondItem="W7H-SN-NMR" secondAttribute="leading" id="aQF-la-L4y"/>
+                            <constraint firstItem="vgq-vb-Zpk" firstAttribute="trailing" secondItem="W7H-SN-NMR" secondAttribute="trailing" id="cdP-Wp-AjN"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="centerX" secondItem="BoJ-Bg-ZzH" secondAttribute="centerX" constant="-1" id="gU0-92-dJ2"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="top" secondItem="ZaB-xb-tE9" secondAttribute="bottom" constant="221" id="kgr-Pj-xFO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7H-SN-NMR" secondAttribute="trailing" constant="307" id="u1X-Yf-wTa"/>
+                            <constraint firstItem="vgq-vb-Zpk" firstAttribute="top" secondItem="W7H-SN-NMR" secondAttribute="bottom" constant="20" id="udA-p3-T2x"/>
+                            <constraint firstItem="W7H-SN-NMR" firstAttribute="top" secondItem="ZaB-xb-tE9" secondAttribute="bottom" constant="75" id="xj2-U9-NuJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="65i-3B-iHY"/>
+                                <exclude reference="IuY-pR-kEX"/>
+                                <exclude reference="NGw-zt-mVB"/>
+                                <exclude reference="gU0-92-dJ2"/>
+                                <exclude reference="kgr-Pj-xFO"/>
+                                <exclude reference="u1X-Yf-wTa"/>
+                                <exclude reference="xj2-U9-NuJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameField" destination="W7H-SN-NMR" id="AVq-9W-JPB"/>
+                        <outlet property="secondNameField" destination="vgq-vb-Zpk" id="rms-aI-HRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAM-an-YcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="-1152"/>
         </scene>
         <!--Simple Core data-->
         <scene sceneID="WmJ-EE-qct">

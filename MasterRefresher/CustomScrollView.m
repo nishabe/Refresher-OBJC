@@ -44,7 +44,7 @@
         contentRect = CGRectUnion(contentRect, view.frame);
     }
     self.scrollView.contentSize = contentRect.size;
-    self.backgroundColor = [UIColor redColor];
+    self.backgroundColor = [UIColor grayColor];
     [self addSubview:self.scrollView];
 }
 

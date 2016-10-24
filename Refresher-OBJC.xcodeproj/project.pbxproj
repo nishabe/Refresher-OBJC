@@ -18,6 +18,7 @@
 		BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C5CAB1D6D657900A25C87 /* BlockTester.m */; };
 		BD2F039B1DB8DD4100163180 /* ScrollViewSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F039A1DB8DD4100163180 /* ScrollViewSampleViewController.m */; };
 		BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */; };
+		BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */; };
 		BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */; };
 		BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230371D75760000BA1EA8 /* TaxProcessor.m */; };
 		BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */; };
@@ -87,6 +88,8 @@
 		BD2F039A1DB8DD4100163180 /* ScrollViewSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewSampleViewController.m; sourceTree = "<group>"; };
 		BD2F039C1DB8DE7D00163180 /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
 		BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		BD2F03A01DBA276C00163180 /* KeyboardHandlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHandlingViewController.h; sourceTree = "<group>"; };
+		BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandlingViewController.m; sourceTree = "<group>"; };
 		BD5230331D75730A00BA1EA8 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
 		BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
 		BD5230361D75760000BA1EA8 /* TaxProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxProcessor.h; sourceTree = "<group>"; };
@@ -226,6 +229,7 @@
 				BDED62021D9CCCA60067AA38 /* WKWebView */,
 				BDC830F71CE343A70015DB42 /* TableView */,
 				BD2F03951DB8DCA400163180 /* Scroll View */,
+				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BDC831271CE358BE0015DB42 /* CoreData */,
 				BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */,
 			);
@@ -269,6 +273,15 @@
 				BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */,
 			);
 			name = "Scroll View";
+			sourceTree = "<group>";
+		};
+		BD2F039F1DBA273C00163180 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BD2F03A01DBA276C00163180 /* KeyboardHandlingViewController.h */,
+				BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */,
+			);
+			name = Keyboard;
 			sourceTree = "<group>";
 		};
 		BD52303F1D783D8F00BA1EA8 /* OperationQueue */ = {
@@ -641,6 +654,7 @@
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
+				BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */,
 				BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
