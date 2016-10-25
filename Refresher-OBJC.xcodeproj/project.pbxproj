@@ -20,6 +20,7 @@
 		BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */; };
 		BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */; };
 		BD42E6C61DBE039F007C3F5D /* GestureRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */; };
+		BD42E6CB1DBF431B007C3F5D /* BasicUIElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD42E6CA1DBF431B007C3F5D /* BasicUIElementsViewController.m */; };
 		BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */; };
 		BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230371D75760000BA1EA8 /* TaxProcessor.m */; };
 		BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52303A1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m */; };
@@ -93,6 +94,8 @@
 		BD2F03A11DBA276C00163180 /* KeyboardHandlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandlingViewController.m; sourceTree = "<group>"; };
 		BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognitionViewController.h; sourceTree = "<group>"; };
 		BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognitionViewController.m; sourceTree = "<group>"; };
+		BD42E6C91DBF431B007C3F5D /* BasicUIElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicUIElementsViewController.h; sourceTree = "<group>"; };
+		BD42E6CA1DBF431B007C3F5D /* BasicUIElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicUIElementsViewController.m; sourceTree = "<group>"; };
 		BD5230331D75730A00BA1EA8 /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
 		BD5230341D75730A00BA1EA8 /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
 		BD5230361D75760000BA1EA8 /* TaxProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxProcessor.h; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 		BD2F03A31DBDF6AA00163180 /* UI Controls */ = {
 			isa = PBXGroup;
 			children = (
+				BD42E6C91DBF431B007C3F5D /* BasicUIElementsViewController.h */,
+				BD42E6CA1DBF431B007C3F5D /* BasicUIElementsViewController.m */,
 				BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */,
 				BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */,
 			);
@@ -656,6 +661,7 @@
 				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
 				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
+				BD42E6CB1DBF431B007C3F5D /* BasicUIElementsViewController.m in Sources */,
 				BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,

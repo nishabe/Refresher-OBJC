@@ -1175,10 +1175,10 @@ On View: Swipe (Left, Right, Up, Down) </string>
             </objects>
             <point key="canvasLocation" x="1586" y="-1086"/>
         </scene>
-        <!--View Controller-->
+        <!--BasicUI Elements View Controller-->
         <scene sceneID="yTP-0W-6Ow">
             <objects>
-                <viewController id="SsT-aF-uBP" sceneMemberID="viewController">
+                <viewController id="SsT-aF-uBP" customClass="BasicUIElementsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BtQ-7h-x32"/>
                         <viewControllerLayoutGuide type="bottom" id="6iK-3Y-apM"/>

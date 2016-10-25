@@ -36,14 +36,6 @@
             lastOrigin = lastOrigin + aButton.frame.size.width+ BUTTON_FRAME_MARGIN;
         }
     }
-    
-    // 3. Set the contextSize of the scrollview in run time based on the width of added buttons
-    self.scrollView.contentSize = CGSizeMake([self getScrollContextWidth], self.frame.size.height);
-    CGRect contentRect = CGRectZero;
-    for (UIButton *view in self.scrollView.subviews) {
-        contentRect = CGRectUnion(contentRect, view.frame);
-    }
-    self.scrollView.contentSize = contentRect.size;
     self.backgroundColor = [UIColor grayColor];
     [self addSubview:self.scrollView];
 }
@@ -71,17 +63,6 @@
     return adjustedSize.width;
 }
 
-- (float)getScrollContextWidth{
-    float width = 0.0;
-    for (UIView * subView in self.scrollView.subviews) {
-        if ([subView isKindOfClass:[UIButton class]]) {
-            width = width + subView.frame.size.width;
-        }
-    }
-    // MARGIN + MARGIN * LABELS COUNT + SUM OF WIDTH OF ALL LABELS
-    return BUTTON_FRAME_MARGIN + BUTTON_FRAME_MARGIN* self.buttonLabels.count+ width;
-}
-
 - (void) didTapOnsuggestionButton:(id)sender{
     [self.delegate didTapOnSuggestionButton:sender];
 }
@@ -89,7 +70,6 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.scrollView.contentSize = CGSizeMake([self getScrollContextWidth], self.frame.size.height);
     CGRect contentRect = CGRectZero;
     for (UIImageView *view in self.scrollView.subviews) {
         contentRect = CGRectUnion(contentRect, view.frame);
