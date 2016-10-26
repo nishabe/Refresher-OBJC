@@ -15,7 +15,7 @@
 @property (nonatomic,strong) UIScrollView* scroller;
 @property (nonatomic,strong) NSArray* pickerItems;
 @property (nonatomic,strong) UITextField* firstNameTextField;
-//@property (nonatomic,strong) NSString* pickedItem;
+@property (nonatomic,strong) UITextField* selectedDate;
 
 @end
 
@@ -40,8 +40,9 @@
     [self createSegmentedControl];
     [self createActivityIndicator];
     [self createPicker];
+    [self createDatePicker];
+
 //    [self createImgaeView];
-//    [self createDatePicker];
 //    [self showAlertView];
 //    [self showActionSheet];
 }
@@ -166,7 +167,7 @@
 }
 
 - (void)createPicker{
-    
+    // Create a textfield to which pickerview is added as input view
     self.firstNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 27.5, 200, 40)];
     self.firstNameTextField.placeholder = @"Select First Name";
     self.firstNameTextField.layer.borderColor = [[UIColor blackColor]CGColor];
@@ -177,6 +178,20 @@
     aPickerView.dataSource = self;
     aPickerView.delegate = self;
     self.firstNameTextField.inputView = aPickerView;
+}
+
+- (void)createDatePicker{
+    // Create a textfield to which datepicker is added as input view
+    self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 29, 200, 40)];
+    self.selectedDate.placeholder = @"Select Date";
+    self.selectedDate.layer.borderColor = [[UIColor blackColor]CGColor];
+    self.selectedDate.layer.borderWidth = 0.3;
+    self.selectedDate.delegate = self;
+    [self.scroller addSubview:self.selectedDate];
+    UIDatePicker* datePicker = [[UIDatePicker alloc]init];
+    [datePicker setDatePickerMode:UIDatePickerModeDate];
+    [datePicker addTarget:self action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
+    self.selectedDate.inputView = datePicker;
 }
 #pragma mark Action of Button Tap
 
@@ -236,7 +251,6 @@
             NSLog(@"Selection Three");
         }
             break;
-            
         default:
             break;
     }
@@ -268,5 +282,14 @@
 {
     self.firstNameTextField.text = [self.pickerItems objectAtIndex:row];
     [self.firstNameTextField resignFirstResponder];
+}
+
+#pragma mark Date Picker Value Changed
+
+-(void)datePickerValueChanged:(UIDatePicker *)sender{
+    NSDateFormatter* format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"yyyy-MM-dd"];
+    self.selectedDate.text = [format stringFromDate:sender.date];
+    [self.selectedDate resignFirstResponder];
 }
 @end
