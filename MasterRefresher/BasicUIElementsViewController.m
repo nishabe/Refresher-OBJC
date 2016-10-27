@@ -41,8 +41,7 @@
     [self createActivityIndicator];
     [self createPicker];
     [self createDatePicker];
-
-//    [self createImgaeView];
+    [self createImageView];
 //    [self showAlertView];
 //    [self showActionSheet];
 }
@@ -170,9 +169,8 @@
     // Create a textfield to which pickerview is added as input view
     self.firstNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 27.5, 200, 40)];
     self.firstNameTextField.placeholder = @"Select First Name";
-    self.firstNameTextField.layer.borderColor = [[UIColor blackColor]CGColor];
-    self.firstNameTextField.layer.borderWidth = 0.3;
     self.firstNameTextField.delegate = self;
+    [self.firstNameTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [self.scroller addSubview:self.firstNameTextField];
     UIPickerView* aPickerView = [[UIPickerView alloc]init];
     aPickerView.dataSource = self;
@@ -182,10 +180,9 @@
 
 - (void)createDatePicker{
     // Create a textfield to which datepicker is added as input view
-    self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 29, 200, 40)];
+    self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 30, 200, 40)];
     self.selectedDate.placeholder = @"Select Date";
-    self.selectedDate.layer.borderColor = [[UIColor blackColor]CGColor];
-    self.selectedDate.layer.borderWidth = 0.3;
+    [self.selectedDate setBorderStyle:UITextBorderStyleRoundedRect];
     self.selectedDate.delegate = self;
     [self.scroller addSubview:self.selectedDate];
     UIDatePicker* datePicker = [[UIDatePicker alloc]init];
@@ -193,6 +190,14 @@
     [datePicker addTarget:self action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
     self.selectedDate.inputView = datePicker;
 }
+
+- (void)createImageView{
+    UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"monkey_1"]];
+    imageView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 33, 180, 172);
+    imageView.backgroundColor = [UIColor redColor];
+    [self.scroller addSubview:imageView];
+}
+
 #pragma mark Action of Button Tap
 
 - (void)didTapOnButton:(id)sender{

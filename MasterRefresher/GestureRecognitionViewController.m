@@ -27,8 +27,6 @@
 - (void)addImageView{
     self.imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"monkey_1.png"]];
     self.imageView.frame = CGRectMake(0, 0, 180, 172);
-    //[self.imageView sizeToFit];
-    //self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:self.imageView];
     self.imageView.center = self.view.center;
     self.imageView.userInteractionEnabled = YES;
