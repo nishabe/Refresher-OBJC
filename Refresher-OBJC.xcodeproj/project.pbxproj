@@ -36,6 +36,7 @@
 		BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */; };
 		BD734AE91D95388A00D8C0F7 /* postserver.py in Resources */ = {isa = PBXBuildFile; fileRef = BD734AE81D95388A00D8C0F7 /* postserver.py */; };
 		BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE851D3110CB00E0FA53 /* GCDViewController.m */; };
+		BD955B221DC22E650045EB47 /* PinchZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B211DC22E650045EB47 /* PinchZoomViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -128,6 +129,8 @@
 		BD83BE7C1D30E5E700E0FA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD83BE841D3110CB00E0FA53 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		BD83BE851D3110CB00E0FA53 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		BD955B201DC22E650045EB47 /* PinchZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchZoomViewController.h; sourceTree = "<group>"; };
+		BD955B211DC22E650045EB47 /* PinchZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchZoomViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
+				BD955B231DC72DE60045EB47 /* Gestures */,
 				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
 				BDED62021D9CCCA60067AA38 /* WKWebView */,
 				BDC830F71CE343A70015DB42 /* TableView */,
@@ -274,10 +278,9 @@
 		BD2F03951DB8DCA400163180 /* Scroll View */ = {
 			isa = PBXGroup;
 			children = (
-				BD2F03991DB8DD4100163180 /* ScrollViewSampleViewController.h */,
-				BD2F039A1DB8DD4100163180 /* ScrollViewSampleViewController.m */,
-				BD2F039C1DB8DE7D00163180 /* CustomScrollView.h */,
-				BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */,
+				BD955B1D1DC22DEF0045EB47 /* RunTimeButtonCreation */,
+				BD955B1E1DC22E250045EB47 /* PinchAndZoom */,
+				BD955B1F1DC22E320045EB47 /* PinchAndZoomWithGesture */,
 			);
 			name = "Scroll View";
 			sourceTree = "<group>";
@@ -296,8 +299,6 @@
 			children = (
 				BD42E6C91DBF431B007C3F5D /* BasicUIElementsViewController.h */,
 				BD42E6CA1DBF431B007C3F5D /* BasicUIElementsViewController.m */,
-				BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */,
-				BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */,
 			);
 			name = "UI Controls";
 			sourceTree = "<group>";
@@ -417,6 +418,42 @@
 				BD83BE851D3110CB00E0FA53 /* GCDViewController.m */,
 			);
 			name = GCD;
+			sourceTree = "<group>";
+		};
+		BD955B1D1DC22DEF0045EB47 /* RunTimeButtonCreation */ = {
+			isa = PBXGroup;
+			children = (
+				BD2F03991DB8DD4100163180 /* ScrollViewSampleViewController.h */,
+				BD2F039A1DB8DD4100163180 /* ScrollViewSampleViewController.m */,
+				BD2F039C1DB8DE7D00163180 /* CustomScrollView.h */,
+				BD2F039D1DB8DE7D00163180 /* CustomScrollView.m */,
+			);
+			name = RunTimeButtonCreation;
+			sourceTree = "<group>";
+		};
+		BD955B1E1DC22E250045EB47 /* PinchAndZoom */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B201DC22E650045EB47 /* PinchZoomViewController.h */,
+				BD955B211DC22E650045EB47 /* PinchZoomViewController.m */,
+			);
+			name = PinchAndZoom;
+			sourceTree = "<group>";
+		};
+		BD955B1F1DC22E320045EB47 /* PinchAndZoomWithGesture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PinchAndZoomWithGesture;
+			sourceTree = "<group>";
+		};
+		BD955B231DC72DE60045EB47 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				BD42E6C41DBE039F007C3F5D /* GestureRecognitionViewController.h */,
+				BD42E6C51DBE039F007C3F5D /* GestureRecognitionViewController.m */,
+			);
+			name = Gestures;
 			sourceTree = "<group>";
 		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
@@ -684,6 +721,7 @@
 				BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */,
 				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
 				BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */,
+				BD955B221DC22E650045EB47 /* PinchZoomViewController.m in Sources */,
 				BD2F039B1DB8DD4100163180 /* ScrollViewSampleViewController.m in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,

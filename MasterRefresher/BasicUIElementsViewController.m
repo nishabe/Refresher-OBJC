@@ -16,7 +16,8 @@
 @property (nonatomic,strong) NSArray* pickerItems;
 @property (nonatomic,strong) UITextField* firstNameTextField;
 @property (nonatomic,strong) UITextField* selectedDate;
-
+@property (assign)BOOL isToolbarShown;
+@property (nonatomic,strong) UIToolbar *toolbar;
 @end
 
 @implementation BasicUIElementsViewController
@@ -42,13 +43,8 @@
     [self createPicker];
     [self createDatePicker];
     [self createImageView];
-//    [self showAlertView];
-//    [self showActionSheet];
+    [self customizeNavigationBar];
 }
-/*
-- (void) {
-}
- */
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -145,7 +141,7 @@
     aProgressView.trackTintColor = [UIColor clearColor];
     [aProgressView setProgress: (float)100/15 animated:YES];
     [self.scroller addSubview:aProgressView];
-
+    
 }
 
 - (void) createSegmentedControl{
@@ -168,7 +164,7 @@
 - (void)createPicker{
     // Create a textfield to which pickerview is added as input view
     self.firstNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 27.5, 200, 40)];
-    self.firstNameTextField.placeholder = @"Select First Name";
+    self.firstNameTextField.placeholder = @"Pick a Name";
     self.firstNameTextField.delegate = self;
     [self.firstNameTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [self.scroller addSubview:self.firstNameTextField];
@@ -181,7 +177,7 @@
 - (void)createDatePicker{
     // Create a textfield to which datepicker is added as input view
     self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 30, 200, 40)];
-    self.selectedDate.placeholder = @"Select Date";
+    self.selectedDate.placeholder = @"Pick a Date";
     [self.selectedDate setBorderStyle:UITextBorderStyleRoundedRect];
     self.selectedDate.delegate = self;
     [self.scroller addSubview:self.selectedDate];
@@ -192,17 +188,83 @@
 }
 
 - (void)createImageView{
-    UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"monkey_1"]];
+    UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"monkey_1.jpg"]];
     imageView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 33, 180, 172);
     imageView.backgroundColor = [UIColor redColor];
     [self.scroller addSubview:imageView];
 }
 
+- (void)customizeNavigationBar{
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"monkey_2"]];
+    UIBarButtonItem * customButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"spanner"] style:UIBarButtonItemStylePlain target:self action:@selector(didTapOnBarButton:)];
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(didTapOnBarButton:)];
+    [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:customButton,shareButton, nil]];
+}
+
+- (void)createBottomToolbar{
+    
+    CGRect frame = CGRectMake(0, self.view.bounds.size.height - 88, self.view.bounds.size.width, 44);
+    self.toolbar = [[UIToolbar alloc] initWithFrame:frame];
+    self.toolbar.translucent = NO;
+    self.toolbar.tintColor = [UIColor greenColor];
+    self.toolbar.barTintColor = [UIColor grayColor];
+    UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithTitle:@"Alert" style:UIBarButtonItemStyleDone target:self action:@selector(showAlertView)];
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *button2=[[UIBarButtonItem alloc]initWithTitle:@"Action Sheet" style:UIBarButtonItemStyleDone target:self action:@selector(showActionSheet)];
+    [self.toolbar setItems:[[NSArray alloc] initWithObjects:button1,spacer,button2,nil]];
+    [self.toolbar setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin];
+    [self.view addSubview:self.toolbar];
+}
+
+- (void)showAlertView{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert Sample" message:@"Message for you" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *actionRead = [UIAlertAction actionWithTitle:@"Read"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction *action) {
+                                                           NSLog(@"Tapped on \"Read\" ");
+                                                       }];
+    [alertController addAction:actionRead];
+    UIAlertAction *actionIgnore = [UIAlertAction actionWithTitle:@"Ignore"
+                                                           style:UIAlertActionStyleDestructive
+                                                         handler:^(UIAlertAction *action) {
+                                                             NSLog(@"Tapped on \"Ignore\" ");
+                                                         }];
+    [alertController addAction:actionIgnore];
+    UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction *action) {
+                                                             NSLog(@"Tapped on \"Cancel\" ");
+                                                         }];
+    [alertController addAction:actionCancel];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)showActionSheet{
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Action sheet Sample" message:@"Choose an action!" preferredStyle:UIAlertControllerStyleActionSheet];
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        NSLog(@"Tapped on \"Cancel\" ");
+    }]];
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Take photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSLog(@"Tapped on \"Take photo\" ");
+    }]];
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Choose photo" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSLog(@"Tapped on \"Choose photo\" ");
+    }]];
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Delete Photo" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+        NSLog(@"Tapped on \"Delete photo\" ");
+    }]];
+    [self presentViewController:actionSheet animated:YES completion:nil];
+    
+}
 #pragma mark Action of Button Tap
 
 - (void)didTapOnButton:(id)sender{
     UIButton* tappedButton = (UIButton*)sender;
-    NSLog(@"Did Tap on Button with title: %@",tappedButton.titleLabel.text);
+    if (tappedButton.titleLabel.text) {
+        NSLog(@"Did Tap on Button with title: %@",tappedButton.titleLabel.text);
+    }else{
+        NSLog(@"Did Tap on Button");
+    }
 }
 
 #pragma mark Action of Switch
@@ -218,7 +280,7 @@
 #pragma mark Text field delegate handling
 
 -(BOOL) textFieldShouldReturn: (UITextField *) textField {
-        [textField resignFirstResponder];
+    [textField resignFirstResponder];
     return YES;
 }
 
@@ -297,4 +359,18 @@
     self.selectedDate.text = [format stringFromDate:sender.date];
     [self.selectedDate resignFirstResponder];
 }
+
+#pragma mark Action of Bar button Tap
+
+- (void)didTapOnBarButton:(UIBarButtonItem*)sender{
+    NSLog(@"Did Tap on Bar button");
+    if (!self.isToolbarShown) {
+        [self createBottomToolbar];
+        self.isToolbarShown = YES;
+    }else{
+        self.isToolbarShown = NO;
+        [self.toolbar removeFromSuperview];
+    }
+}
+
 @end
