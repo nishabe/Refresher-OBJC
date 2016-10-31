@@ -31,6 +31,7 @@
     [self createScroller];
     
     [self createLabel];
+    [self createAttributedLabel];
     [self createButton];
     [self createTextField];
     [self createTextView];
@@ -70,9 +71,61 @@
     [aLabel setText:@"Text of the Label"];
     [[self scroller] addSubview:aLabel];
 }
+
+- (void)createAttributedLabel{
+    // Creation of Label
+    UILabel *aLabel = [[UILabel alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y*2.5 , 400, 40)];
+    [aLabel setBackgroundColor:[UIColor clearColor]];
+    [[self scroller] addSubview:aLabel];
+    
+    // Setting the attributes
+    NSString *redText = @"red text";
+    NSString *greenText = @"green text";
+    NSString *purpleBoldText = @"purple bold text";
+    
+    NSString *text = [NSString stringWithFormat:@"Here are %@, %@ and %@",
+                      redText,
+                      greenText,
+                      purpleBoldText];
+    
+    // If attributed text is supported (iOS6+)
+    if ([aLabel respondsToSelector:@selector(setAttributedText:)]) {
+        // Define general attributes for the entire text
+        NSDictionary *attribs = @{
+                                  NSForegroundColorAttributeName: aLabel.textColor,
+                                  NSFontAttributeName: aLabel.font
+                                  };
+        NSMutableAttributedString *attributedText =
+        [[NSMutableAttributedString alloc] initWithString:text
+                                               attributes:attribs];
+        // Red text attributes
+        UIColor *redColor = [UIColor redColor];
+        NSRange redTextRange = [text rangeOfString:redText];// * Notice that usage of rangeOfString in this case may cause some bugs - I use it here only for demonstration
+        [attributedText setAttributes:@{NSForegroundColorAttributeName:redColor}
+                                range:redTextRange];
+        // Green text attributes
+        UIColor *greenColor = [UIColor greenColor];
+        NSRange greenTextRange = [text rangeOfString:greenText];// * Notice that usage of rangeOfString in this case may cause some bugs - I use it here only for demonstration
+        [attributedText setAttributes:@{NSForegroundColorAttributeName:greenColor}
+                                range:greenTextRange];
+        // Purple and bold text attributes
+        UIColor *purpleColor = [UIColor purpleColor];
+        UIFont *boldFont = [UIFont boldSystemFontOfSize:aLabel.font.pointSize];
+        NSRange purpleBoldTextRange = [text rangeOfString:purpleBoldText];// * Notice that usage of rangeOfString in this case may cause some bugs - I use it here only for demonstration
+        [attributedText setAttributes:@{NSForegroundColorAttributeName:purpleColor,
+                                        NSFontAttributeName:boldFont}
+                                range:purpleBoldTextRange];
+        aLabel.attributedText = attributedText;
+    }
+    // If attributed text is NOT supported (iOS5-)
+    else {
+        aLabel.text = text;
+    }
+}
+
 - (void)createButton{
     UIButton *aButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    aButton.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 3, 150, 40);
+    aButton.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 4.5, 150, 40);
     [aButton setTitle:@"Title of the Button" forState:UIControlStateNormal];
     aButton.titleLabel.font = [UIFont systemFontOfSize:17.0];
     [aButton addTarget:self action:@selector(didTapOnButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -85,7 +138,7 @@
 }
 
 - (void)createTextField{
-    UITextField *aTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 5.7, 100, 40)];
+    UITextField *aTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 7.5, 100, 40)];
     [aTextField setBorderStyle:UITextBorderStyleRoundedRect];
     aTextField.placeholder = @"Type here";
     aTextField.delegate= self;
@@ -94,20 +147,20 @@
 
 - (void)createTextView{
     UITextView *aTextView = [[UITextView alloc] init];
-    aTextView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 8.8, 310, 60);
+    aTextView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 10, 310, 60);
     aTextView.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
     aTextView.editable = NO;
     [self.scroller addSubview:aTextView];
 }
 
 - (void)createSwitch{
-    UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 13, 40, 40)];
+    UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 14, 40, 40)];
     [aSwitch addTarget:self action:@selector(didTapOnSwitch:) forControlEvents:UIControlEventValueChanged];
     [self.scroller addSubview:aSwitch];
 }
 
 - (void)createStepper {
-    UIStepper* aStepper = [[UIStepper alloc] initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 15.8, 40, 40)];
+    UIStepper* aStepper = [[UIStepper alloc] initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 16.8, 40, 40)];
     [aStepper addTarget:self action:@selector(stepperValueDidChange:) forControlEvents:UIControlEventValueChanged];
     aStepper.maximumValue =10;
     aStepper.minimumValue = 0;
@@ -116,7 +169,7 @@
 }
 
 - (void)createSlider{
-    CGRect frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 18, 150, 40);
+    CGRect frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 19, 150, 40);
     UISlider *aSlider = [[UISlider alloc] initWithFrame:frame];
     [aSlider addTarget:self action:@selector(sliderValueDidChange:) forControlEvents:UIControlEventValueChanged];
     [aSlider setBackgroundColor:[UIColor clearColor]];
@@ -130,7 +183,7 @@
 - (void)createProgressView{
     UIProgressView *aProgressView;
     aProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    [[aProgressView layer]setFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 20, 150, 40)];
+    [[aProgressView layer]setFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 21, 150, 40)];
     // Set Appearence
     aProgressView.progressTintColor = [UIColor colorWithRed:187.0/255 green:160.0/255 blue:209.0/255 alpha:1.0];
     [[aProgressView layer]setCornerRadius:15.0f];
@@ -146,7 +199,7 @@
 
 - (void) createSegmentedControl{
     UISegmentedControl *aSegmentControl = [[UISegmentedControl alloc]initWithItems:@[@"One",@"Two",@"Three"]];
-    aSegmentControl.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 23, 150, 40);
+    aSegmentControl.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 24, 150, 40);
     [aSegmentControl addTarget:self action:@selector(segmentControlValueDidChange:) forControlEvents:UIControlEventValueChanged];
     [aSegmentControl setSelectedSegmentIndex:0];
     [self.scroller addSubview:aSegmentControl];
@@ -156,14 +209,14 @@
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.alpha = 1.0;
     activityIndicator.backgroundColor = [UIColor yellowColor];
-    activityIndicator.center = CGPointMake(ORIGIN_X + 30, ORIGIN_Y * 26);
+    activityIndicator.center = CGPointMake(ORIGIN_X + 32, ORIGIN_Y * 27.5);
     [self.scroller addSubview:activityIndicator];
     [activityIndicator startAnimating];
 }
 
 - (void)createPicker{
     // Create a textfield to which pickerview is added as input view
-    self.firstNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 27.5, 200, 40)];
+    self.firstNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 28.5, 200, 40)];
     self.firstNameTextField.placeholder = @"Pick a Name";
     self.firstNameTextField.delegate = self;
     [self.firstNameTextField setBorderStyle:UITextBorderStyleRoundedRect];
@@ -176,7 +229,7 @@
 
 - (void)createDatePicker{
     // Create a textfield to which datepicker is added as input view
-    self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 30, 200, 40)];
+    self.selectedDate = [[UITextField alloc]initWithFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 31, 200, 40)];
     self.selectedDate.placeholder = @"Pick a Date";
     [self.selectedDate setBorderStyle:UITextBorderStyleRoundedRect];
     self.selectedDate.delegate = self;
@@ -189,7 +242,7 @@
 
 - (void)createImageView{
     UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"monkey_1.jpg"]];
-    imageView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 33, 180, 172);
+    imageView.frame = CGRectMake(ORIGIN_X, ORIGIN_Y * 34, 180, 172);
     imageView.backgroundColor = [UIColor redColor];
     [self.scroller addSubview:imageView];
 }
