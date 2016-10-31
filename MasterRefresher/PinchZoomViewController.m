@@ -2,8 +2,8 @@
 //  PinchZoomViewController.m
 //  Refresher-OBJC
 //
-//  Created by Aneesh Abraham01 on 10/27/16.
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Created by   on 10/27/16.
+//  Copyright © 2016  . All rights reserved.
 // Ref: https://developer.apple.com/library/content/documentation/WindowsViews/Conceptual/UIScrollView_pg/ZoomZoom/ZoomZoom.html
 
 #import "PinchZoomViewController.h"
@@ -29,8 +29,6 @@
     CGRect fullScreenRect=[[UIScreen mainScreen] bounds];
     self.scrollView=[[UIScrollView alloc] initWithFrame:fullScreenRect];
     self.view=self.scrollView;
-    self.scrollView.contentSize=CGSizeMake(320,758);
-    self.view=self.scrollView;
 }
 
 # pragma mark Private Functions
@@ -55,15 +53,16 @@
 
 - (void) configureScrollView{
     
-    self.scrollView.minimumZoomScale=0.5;
-    self.scrollView.maximumZoomScale=6.0;
-    self.scrollView.contentSize=CGSizeMake(1280, 960);
-    self.scrollView.delegate=self;
-    self.scrollView.backgroundColor = [UIColor whiteColor];
-    self.imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"watch.jpg"]];
+    UIImage* image = [UIImage imageNamed:@"watch.jpg"];
+    self.imageView = [[UIImageView alloc]initWithImage:image];
     self.imageView.frame = self.view.bounds;
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:self.imageView];
+    [self.scrollView addSubview:self.imageView];
+    self.scrollView.minimumZoomScale=0.5;
+    self.scrollView.maximumZoomScale=6.0;
+    self.scrollView.contentSize=self.imageView.frame.size;
+    self.scrollView.delegate=self;
+    self.scrollView.backgroundColor = [UIColor whiteColor];
 }
 
 #pragma mark Scroll View Delegate handling

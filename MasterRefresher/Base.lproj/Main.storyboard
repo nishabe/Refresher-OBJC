@@ -273,6 +273,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hBo-Wo-OTX" kind="show" id="8ku-35-hfp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1243,6 +1246,24 @@ On View: Swipe (Left, Right, Up, Down) </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jn1-ec-1nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1615" y="-1056"/>
+        </scene>
+        <!--Pinch Zoom Gesture View Controller-->
+        <scene sceneID="VAq-1k-aDQ">
+            <objects>
+                <viewController id="hBo-Wo-OTX" customClass="PinchZoomGestureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lqy-XD-bdo"/>
+                        <viewControllerLayoutGuide type="bottom" id="rPI-bO-HaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6db-IJ-aDe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNj-qm-OSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-1026"/>
         </scene>
         <!--BasicUI Elements View Controller-->
         <scene sceneID="yTP-0W-6Ow">

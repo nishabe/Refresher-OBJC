@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth |
+    UIViewAutoresizingFlexibleHeight;
     isEditing=NO;
     self.editBarButton = [[UIBarButtonItem alloc]
                                    initWithTitle:@"Edit"
