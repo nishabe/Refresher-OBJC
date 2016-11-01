@@ -198,10 +198,41 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="SF SAFARI VIEWCONTROLLER" id="Q71-JT-aHX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="35p-4m-CUt" detailTextLabel="BHS-Sz-j8o" style="IBUITableViewCellStyleValue1" id="nOL-kH-uza">
+                                        <rect key="frame" x="0.0" y="569" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nOL-kH-uza" id="uwI-Mu-hnn">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Load Webpage in SFSafariViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35p-4m-CUt">
+                                                    <rect key="frame" x="15" y="12" width="297" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BHS-Sz-j8o">
+                                                    <rect key="frame" x="523" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KkQ-qF-Pwp" kind="show" id="myI-bS-oB0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="TABLE VIEW" id="Bvb-TC-jga">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="qQq-d2-OhB" detailTextLabel="MbS-Zn-8I2" style="IBUITableViewCellStyleValue1" id="Bwg-wV-0j3">
-                                        <rect key="frame" x="0.0" y="569" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="664" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bwg-wV-0j3" id="NHS-zO-Nf1">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -232,7 +263,7 @@
                             <tableViewSection headerTitle="SCROLL VIEW" id="ND2-rV-xlD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="sIk-iS-Et1" detailTextLabel="ROn-Jg-mgY" style="IBUITableViewCellStyleValue1" id="o3A-pp-27I">
-                                        <rect key="frame" x="0.0" y="664" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="759" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3A-pp-27I" id="Ziz-RG-PBe">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -259,7 +290,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="u8O-WD-YRI" detailTextLabel="1G9-jM-kgF" style="IBUITableViewCellStyleValue1" id="qBY-XD-KAq">
-                                        <rect key="frame" x="0.0" y="708" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="803" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qBY-XD-KAq" id="9sQ-OC-bvq">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -286,7 +317,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="nsU-7A-5I2" detailTextLabel="igj-40-IGD" style="IBUITableViewCellStyleValue1" id="SKZ-6D-YH7">
-                                        <rect key="frame" x="0.0" y="752" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="847" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SKZ-6D-YH7" id="HLZ-RN-Oli">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -317,7 +348,7 @@
                             <tableViewSection headerTitle="LOCATION / MAPKIT" id="esX-ss-lN2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="C1u-Tv-che" detailTextLabel="qDc-wi-v3E" style="IBUITableViewCellStyleValue1" id="0FU-Rw-9Aq">
-                                        <rect key="frame" x="0.0" y="847" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="942" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0FU-Rw-9Aq" id="srN-Hq-bsw">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1317,6 +1348,49 @@ On View: Swipe (Left, Right, Up, Down) </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoQ-cv-biK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1680" y="-996"/>
+        </scene>
+        <!--Safari View Controller-->
+        <scene sceneID="uzI-Ht-2Tt">
+            <objects>
+                <viewController id="KkQ-qF-Pwp" customClass="SafariViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F6r-In-laO"/>
+                        <viewControllerLayoutGuide type="bottom" id="zPS-cR-Ry1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbE-gK-GUL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNB-IE-BLe">
+                                <rect key="frame" x="195" y="285" width="210" height="30"/>
+                                <state key="normal" title="Open in SFSafariViewContoller"/>
+                                <connections>
+                                    <action selector="openWebPage:" destination="KkQ-qF-Pwp" eventType="touchUpInside" id="YHY-xA-iCu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="leading" secondItem="QbE-gK-GUL" secondAttribute="leadingMargin" constant="244" id="0NZ-Nc-ErV"/>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="centerX" secondItem="QbE-gK-GUL" secondAttribute="centerX" id="N8f-a2-BEY"/>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="centerY" secondItem="QbE-gK-GUL" secondAttribute="centerY" constant="-106" id="Ypl-ME-ExN"/>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="top" secondItem="F6r-In-laO" secondAttribute="bottom" constant="115" id="b7o-Jm-SPv"/>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="centerY" secondItem="QbE-gK-GUL" secondAttribute="centerY" id="cZ4-8f-B88"/>
+                            <constraint firstItem="oNB-IE-BLe" firstAttribute="centerX" secondItem="QbE-gK-GUL" secondAttribute="centerX" constant="-13" id="gie-F7-LqK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0NZ-Nc-ErV"/>
+                                <exclude reference="Ypl-ME-ExN"/>
+                                <exclude reference="b7o-Jm-SPv"/>
+                                <exclude reference="gie-F7-LqK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIO-md-LFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="-964"/>
         </scene>
         <!--BasicUI Elements View Controller-->
         <scene sceneID="yTP-0W-6Ow">

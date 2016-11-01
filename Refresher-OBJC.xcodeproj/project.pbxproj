@@ -41,6 +41,7 @@
 		BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B2D1DC75FE10045EB47 /* MKMapViewViewController.m */; };
 		BD955B301DC76A470045EB47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B2F1DC76A470045EB47 /* MapKit.framework */; };
 		BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B311DC76A4D0045EB47 /* CoreLocation.framework */; };
+		BD955B361DC8A0620045EB47 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B351DC8A0620045EB47 /* SafariViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -140,6 +141,8 @@
 		BD955B2D1DC75FE10045EB47 /* MKMapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewViewController.m; sourceTree = "<group>"; };
 		BD955B2F1DC76A470045EB47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD955B311DC76A4D0045EB47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BD955B341DC8A0620045EB47 /* SafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
+		BD955B351DC8A0620045EB47 /* SafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BD955B331DC8A0290045EB47 /* SFSafariViewController */,
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
 				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BD955B231DC72DE60045EB47 /* Gestures */,
@@ -508,6 +512,15 @@
 			children = (
 			);
 			name = "Design patterns";
+			sourceTree = "<group>";
+		};
+		BD955B331DC8A0290045EB47 /* SFSafariViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B341DC8A0620045EB47 /* SafariViewController.h */,
+				BD955B351DC8A0620045EB47 /* SafariViewController.m */,
+			);
+			name = SFSafariViewController;
 			sourceTree = "<group>";
 		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
@@ -778,6 +791,7 @@
 				BD42E6C61DBE039F007C3F5D /* GestureRecognitionViewController.m in Sources */,
 				BDC014821D5A15B2007EEF90 /* SampleProtocol.m in Sources */,
 				BDC014B91D5B2C2A007EEF90 /* KVCOViewController.m in Sources */,
+				BD955B361DC8A0620045EB47 /* SafariViewController.m in Sources */,
 				BD5230351D75730A00BA1EA8 /* MethodSwizzlingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
