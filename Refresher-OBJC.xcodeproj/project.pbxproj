@@ -38,6 +38,9 @@
 		BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD83BE851D3110CB00E0FA53 /* GCDViewController.m */; };
 		BD955B221DC22E650045EB47 /* PinchZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B211DC22E650045EB47 /* PinchZoomViewController.m */; };
 		BD955B261DC73C320045EB47 /* PinchZoomGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B251DC73C320045EB47 /* PinchZoomGestureViewController.m */; };
+		BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B2D1DC75FE10045EB47 /* MKMapViewViewController.m */; };
+		BD955B301DC76A470045EB47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B2F1DC76A470045EB47 /* MapKit.framework */; };
+		BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B311DC76A4D0045EB47 /* CoreLocation.framework */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -49,7 +52,6 @@
 		BDC014A11D5B0902007EEF90 /* NotificationSample.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014A01D5B0902007EEF90 /* NotificationSample.m */; };
 		BDC014B61D5B2C05007EEF90 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014B51D5B2C05007EEF90 /* Student.m */; };
 		BDC014B91D5B2C2A007EEF90 /* KVCOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014B81D5B2C2A007EEF90 /* KVCOViewController.m */; };
-		BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC44F051CCA1742007E3073 /* ChartsViewController.m */; };
 		BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */; };
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
@@ -134,6 +136,10 @@
 		BD955B211DC22E650045EB47 /* PinchZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchZoomViewController.m; sourceTree = "<group>"; };
 		BD955B241DC73C320045EB47 /* PinchZoomGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchZoomGestureViewController.h; sourceTree = "<group>"; };
 		BD955B251DC73C320045EB47 /* PinchZoomGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchZoomGestureViewController.m; sourceTree = "<group>"; };
+		BD955B2C1DC75FE10045EB47 /* MKMapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewViewController.h; sourceTree = "<group>"; };
+		BD955B2D1DC75FE10045EB47 /* MKMapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewViewController.m; sourceTree = "<group>"; };
+		BD955B2F1DC76A470045EB47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BD955B311DC76A4D0045EB47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -156,8 +162,6 @@
 		BDC014B51D5B2C05007EEF90 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		BDC014B71D5B2C2A007EEF90 /* KVCOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCOViewController.h; sourceTree = "<group>"; };
 		BDC014B81D5B2C2A007EEF90 /* KVCOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCOViewController.m; sourceTree = "<group>"; };
-		BDC44F041CCA1742007E3073 /* ChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
-		BDC44F051CCA1742007E3073 /* ChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
 		BDC830F81CE343C90015DB42 /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		BDC830F91CE343C90015DB42 /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		BDC831251CE358AB0015DB42 /* Refresher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Refresher.xcdatamodel; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */,
+				BD955B301DC76A470045EB47 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +200,8 @@
 		9CA39B171CB38CFD003B0ECA = {
 			isa = PBXGroup;
 			children = (
+				BD955B311DC76A4D0045EB47 /* CoreLocation.framework */,
+				BD955B2F1DC76A470045EB47 /* MapKit.framework */,
 				9CA39B221CB38CFD003B0ECA /* Refresher */,
 				9CA39B3F1CB38CFD003B0ECA /* RefresherTests */,
 				9CA39B211CB38CFD003B0ECA /* Products */,
@@ -238,14 +246,13 @@
 			isa = PBXGroup;
 			children = (
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
+				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BD955B231DC72DE60045EB47 /* Gestures */,
 				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
 				BDED62021D9CCCA60067AA38 /* WKWebView */,
 				BDC830F71CE343A70015DB42 /* TableView */,
 				BD2F03951DB8DCA400163180 /* Scroll View */,
-				BD2F039F1DBA273C00163180 /* Keyboard */,
-				BDC831271CE358BE0015DB42 /* CoreData */,
-				BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */,
+				BD955B271DC75E6E0045EB47 /* MKMapViewCoreLocation */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -253,14 +260,13 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
-				BD52305E1D7DEE5A00BA1EA8 /* NetworkCommunication */,
-				BD52303F1D783D8F00BA1EA8 /* OperationQueue */,
-				BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */,
-				BD2C5CA61D6D652D00A25C87 /* Blocks */,
+				BD955B2B1DC75F2E0045EB47 /* Design patterns */,
+				BD955B281DC75EFB0045EB47 /* Data Persistence */,
+				BD955B291DC75F0E0045EB47 /* Multithreading */,
+				BD955B2A1DC75F1E0045EB47 /* Category and Extension */,
 				BDC0147A1D5A1099007EEF90 /* Design Patterns */,
-				BD83BE831D3110B200E0FA53 /* GCD */,
-				BDC0146F1D59FA9A007EEF90 /* Category */,
-				BDC014761D5A0535007EEF90 /* Extension */,
+				BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */,
+				BD52305E1D7DEE5A00BA1EA8 /* NetworkCommunication */,
 			);
 			name = Concepts;
 			sourceTree = "<group>";
@@ -461,6 +467,49 @@
 			name = Gestures;
 			sourceTree = "<group>";
 		};
+		BD955B271DC75E6E0045EB47 /* MKMapViewCoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B2C1DC75FE10045EB47 /* MKMapViewViewController.h */,
+				BD955B2D1DC75FE10045EB47 /* MKMapViewViewController.m */,
+			);
+			name = MKMapViewCoreLocation;
+			sourceTree = "<group>";
+		};
+		BD955B281DC75EFB0045EB47 /* Data Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BDC831271CE358BE0015DB42 /* CoreData */,
+			);
+			name = "Data Persistence";
+			sourceTree = "<group>";
+		};
+		BD955B291DC75F0E0045EB47 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				BD2C5CA61D6D652D00A25C87 /* Blocks */,
+				BD52303F1D783D8F00BA1EA8 /* OperationQueue */,
+				BD83BE831D3110B200E0FA53 /* GCD */,
+			);
+			name = Multithreading;
+			sourceTree = "<group>";
+		};
+		BD955B2A1DC75F1E0045EB47 /* Category and Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0146F1D59FA9A007EEF90 /* Category */,
+				BDC014761D5A0535007EEF90 /* Extension */,
+			);
+			name = "Category and Extension";
+			sourceTree = "<group>";
+		};
+		BD955B2B1DC75F2E0045EB47 /* Design patterns */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Design patterns";
+			sourceTree = "<group>";
+		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,15 +595,6 @@
 				BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */,
 			);
 			name = "UI WebView";
-			sourceTree = "<group>";
-		};
-		BDC44EFF1CCA15FE007E3073 /* Charts and Graphs */ = {
-			isa = PBXGroup;
-			children = (
-				BDC44F041CCA1742007E3073 /* ChartsViewController.h */,
-				BDC44F051CCA1742007E3073 /* ChartsViewController.m */,
-			);
-			name = "Charts and Graphs";
 			sourceTree = "<group>";
 		};
 		BDC830F71CE343A70015DB42 /* TableView */ = {
@@ -698,7 +738,6 @@
 			files = (
 				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
 				BDC014861D5AFA80007EEF90 /* Logger.m in Sources */,
-				BDC44F061CCA1742007E3073 /* ChartsViewController.m in Sources */,
 				BDC0149E1D5B08E3007EEF90 /* NotificationViewController.m in Sources */,
 				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
 				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
@@ -732,6 +771,7 @@
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
+				BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
