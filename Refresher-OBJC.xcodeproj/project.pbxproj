@@ -42,6 +42,8 @@
 		BD955B301DC76A470045EB47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B2F1DC76A470045EB47 /* MapKit.framework */; };
 		BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD955B311DC76A4D0045EB47 /* CoreLocation.framework */; };
 		BD955B361DC8A0620045EB47 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B351DC8A0620045EB47 /* SafariViewController.m */; };
+		BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B391DC8AEF30045EB47 /* PresentationViewController.m */; };
+		BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B3C1DC8B4550045EB47 /* PopViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -143,6 +145,10 @@
 		BD955B311DC76A4D0045EB47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BD955B341DC8A0620045EB47 /* SafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
 		BD955B351DC8A0620045EB47 /* SafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
+		BD955B381DC8AEF30045EB47 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationViewController.h; sourceTree = "<group>"; };
+		BD955B391DC8AEF30045EB47 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
+		BD955B3B1DC8B4550045EB47 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		BD955B3C1DC8B4550045EB47 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -203,8 +209,6 @@
 		9CA39B171CB38CFD003B0ECA = {
 			isa = PBXGroup;
 			children = (
-				BD955B311DC76A4D0045EB47 /* CoreLocation.framework */,
-				BD955B2F1DC76A470045EB47 /* MapKit.framework */,
 				9CA39B221CB38CFD003B0ECA /* Refresher */,
 				9CA39B3F1CB38CFD003B0ECA /* RefresherTests */,
 				9CA39B211CB38CFD003B0ECA /* Products */,
@@ -229,6 +233,7 @@
 				BD734ADF1D92420300D8C0F7 /* Resources */,
 				BD734AE01D92425900D8C0F7 /* Configuration */,
 				BD734AE51D9243DA00D8C0F7 /* Supporing Files */,
+				BD955B3E1DC8B6ED0045EB47 /* Internal Libraries */,
 				BD734AE41D92430C00D8C0F7 /* External Libraries */,
 			);
 			name = Refresher;
@@ -248,15 +253,16 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				BD955B331DC8A0290045EB47 /* SFSafariViewController */,
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
 				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BD955B231DC72DE60045EB47 /* Gestures */,
 				BDC44EFE1CCA15D9007E3073 /* UI WebView */,
 				BDED62021D9CCCA60067AA38 /* WKWebView */,
+				BD955B331DC8A0290045EB47 /* SFSafariViewController */,
 				BDC830F71CE343A70015DB42 /* TableView */,
 				BD2F03951DB8DCA400163180 /* Scroll View */,
 				BD955B271DC75E6E0045EB47 /* MKMapViewCoreLocation */,
+				BD955B371DC8AEBE0045EB47 /* Presentation */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -523,6 +529,26 @@
 			name = SFSafariViewController;
 			sourceTree = "<group>";
 		};
+		BD955B371DC8AEBE0045EB47 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B381DC8AEF30045EB47 /* PresentationViewController.h */,
+				BD955B391DC8AEF30045EB47 /* PresentationViewController.m */,
+				BD955B3B1DC8B4550045EB47 /* PopViewController.h */,
+				BD955B3C1DC8B4550045EB47 /* PopViewController.m */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		BD955B3E1DC8B6ED0045EB47 /* Internal Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B311DC76A4D0045EB47 /* CoreLocation.framework */,
+				BD955B2F1DC76A470045EB47 /* MapKit.framework */,
+			);
+			name = "Internal Libraries";
+			sourceTree = "<group>";
+		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +783,7 @@
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
 				BD42E6CB1DBF431B007C3F5D /* BasicUIElementsViewController.m in Sources */,
 				BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */,
+				BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				BD955B261DC73C320045EB47 /* PinchZoomGestureViewController.m in Sources */,
@@ -786,6 +813,7 @@
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
 				BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
+				BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
 				BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */,
 				BD42E6C61DBE039F007C3F5D /* GestureRecognitionViewController.m in Sources */,
@@ -923,6 +951,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresher;
 				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -935,6 +964,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamworks.MasterRefresher;
 				PRODUCT_NAME = "Refresher-OBJC-OBJC";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

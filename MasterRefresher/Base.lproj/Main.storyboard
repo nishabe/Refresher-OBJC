@@ -376,6 +376,37 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="PRESENTATION" id="UGh-Qt-pcD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="gXO-Tz-VTB" detailTextLabel="rLx-Nl-3eE" style="IBUITableViewCellStyleValue1" id="rPo-dC-T4f">
+                                        <rect key="frame" x="0.0" y="1037" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rPo-dC-T4f" id="TZ5-P2-UY4">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Popover, Modal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gXO-Tz-VTB">
+                                                    <rect key="frame" x="15" y="12" width="112" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rLx-Nl-3eE">
+                                                    <rect key="frame" x="523" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FbW-Ic-o0g" kind="show" id="gEw-pa-SNd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="w5g-98-4NY" id="rle-CI-HBe"/>
@@ -1391,6 +1422,49 @@ On View: Swipe (Left, Right, Up, Down) </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIO-md-LFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1712" y="-964"/>
+        </scene>
+        <!--Presentation View Controller-->
+        <scene sceneID="f4j-6d-wFj">
+            <objects>
+                <viewController id="FbW-Ic-o0g" customClass="PresentationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uAA-1j-HJm"/>
+                        <viewControllerLayoutGuide type="bottom" id="cjE-gf-dpp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f6i-zF-0NS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bud-9f-YMB">
+                                <rect key="frame" x="20" y="91" width="106" height="30"/>
+                                <state key="normal" title="Show Pop Over"/>
+                                <connections>
+                                    <action selector="showPopover:" destination="FbW-Ic-o0g" eventType="touchUpInside" id="6wD-AS-eej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lM-C4-BoU">
+                                <rect key="frame" x="20" y="129" width="121" height="30"/>
+                                <state key="normal" title="Show Modal View"/>
+                                <connections>
+                                    <action selector="showModalView:" destination="FbW-Ic-o0g" eventType="touchUpInside" id="gHX-ki-MR6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bud-9f-YMB" firstAttribute="leading" secondItem="1lM-C4-BoU" secondAttribute="leading" id="49t-PV-QgL"/>
+                            <constraint firstItem="1lM-C4-BoU" firstAttribute="top" secondItem="Bud-9f-YMB" secondAttribute="bottom" constant="8" symbolic="YES" id="UB7-vG-PKh"/>
+                            <constraint firstItem="Bud-9f-YMB" firstAttribute="top" secondItem="uAA-1j-HJm" secondAttribute="bottom" constant="27" id="fUx-Lk-lj2"/>
+                            <constraint firstItem="Bud-9f-YMB" firstAttribute="leading" secondItem="f6i-zF-0NS" secondAttribute="leadingMargin" id="kP6-zz-FcS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popOverButton" destination="Bud-9f-YMB" id="Z82-dz-UC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGY-fV-ERZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744" y="-934"/>
         </scene>
         <!--BasicUI Elements View Controller-->
         <scene sceneID="yTP-0W-6Ow">
