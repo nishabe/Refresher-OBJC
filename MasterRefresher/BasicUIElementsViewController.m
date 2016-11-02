@@ -61,7 +61,6 @@
 
 - (void) createScroller{
     self.scroller = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    self.scroller.showsHorizontalScrollIndicator=YES;
     [self.view addSubview:self.scroller];
 }
 

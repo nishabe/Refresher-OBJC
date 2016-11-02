@@ -44,6 +44,9 @@
 		BD955B361DC8A0620045EB47 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B351DC8A0620045EB47 /* SafariViewController.m */; };
 		BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B391DC8AEF30045EB47 /* PresentationViewController.m */; };
 		BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B3C1DC8B4550045EB47 /* PopViewController.m */; };
+		BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B411DC8F5630045EB47 /* EffectsViewController.m */; };
+		BD955B461DC9D5AC0045EB47 /* RippleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B441DC9D5AC0045EB47 /* RippleEffect.m */; };
+		BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -149,6 +152,12 @@
 		BD955B391DC8AEF30045EB47 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
 		BD955B3B1DC8B4550045EB47 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		BD955B3C1DC8B4550045EB47 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		BD955B401DC8F5630045EB47 /* EffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsViewController.h; sourceTree = "<group>"; };
+		BD955B411DC8F5630045EB47 /* EffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsViewController.m; sourceTree = "<group>"; };
+		BD955B431DC9D5AC0045EB47 /* RippleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleEffect.h; sourceTree = "<group>"; };
+		BD955B441DC9D5AC0045EB47 /* RippleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleEffect.m; sourceTree = "<group>"; };
+		BD955B491DCA40E30045EB47 /* VisualEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualEffectViewController.h; sourceTree = "<group>"; };
+		BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualEffectViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -263,6 +272,7 @@
 				BD2F03951DB8DCA400163180 /* Scroll View */,
 				BD955B271DC75E6E0045EB47 /* MKMapViewCoreLocation */,
 				BD955B371DC8AEBE0045EB47 /* Presentation */,
+				BD955B3F1DC8F5450045EB47 /* Effects */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -549,6 +559,44 @@
 			name = "Internal Libraries";
 			sourceTree = "<group>";
 		};
+		BD955B3F1DC8F5450045EB47 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B481DCA40BE0045EB47 /* Shadows */,
+				BD955B471DCA40A10045EB47 /* VisualEffect */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		BD955B451DC9D5AC0045EB47 /* RippleEffect */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B431DC9D5AC0045EB47 /* RippleEffect.h */,
+				BD955B441DC9D5AC0045EB47 /* RippleEffect.m */,
+			);
+			name = RippleEffect;
+			path = ../../../WPL/AudioBook_Streaming/AudioBook;
+			sourceTree = "<group>";
+		};
+		BD955B471DCA40A10045EB47 /* VisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B491DCA40E30045EB47 /* VisualEffectViewController.h */,
+				BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */,
+			);
+			name = VisualEffect;
+			sourceTree = "<group>";
+		};
+		BD955B481DCA40BE0045EB47 /* Shadows */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B401DC8F5630045EB47 /* EffectsViewController.h */,
+				BD955B411DC8F5630045EB47 /* EffectsViewController.m */,
+				BD955B451DC9D5AC0045EB47 /* RippleEffect */,
+			);
+			name = Shadows;
+			sourceTree = "<group>";
+		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,6 +825,7 @@
 			files = (
 				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
 				BDC014861D5AFA80007EEF90 /* Logger.m in Sources */,
+				BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */,
 				BDC0149E1D5B08E3007EEF90 /* NotificationViewController.m in Sources */,
 				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
 				BD2C5CA91D6D655200A25C87 /* BlocksViewController.m in Sources */,
@@ -809,7 +858,9 @@
 				BD955B221DC22E650045EB47 /* PinchZoomViewController.m in Sources */,
 				BD2F039B1DB8DD4100163180 /* ScrollViewSampleViewController.m in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
+				BD955B461DC9D5AC0045EB47 /* RippleEffect.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
+				BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */,
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
 				BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
