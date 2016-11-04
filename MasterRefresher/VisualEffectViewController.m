@@ -95,6 +95,7 @@
             break;
         case 3:
         {
+            //TODO: Need to revalidate the output of below code.
             [self.blurEffectView removeFromSuperview];
             [self.vibrancyEffectView removeFromSuperview];
             // 1. Create Blur Effect

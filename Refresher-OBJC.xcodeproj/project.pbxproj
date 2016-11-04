@@ -47,6 +47,9 @@
 		BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B411DC8F5630045EB47 /* EffectsViewController.m */; };
 		BD955B461DC9D5AC0045EB47 /* RippleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B441DC9D5AC0045EB47 /* RippleEffect.m */; };
 		BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */; };
+		BD955B4F1DCB215C0045EB47 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4E1DCB215C0045EB47 /* CollectionViewController.m */; };
+		BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B521DCB2D0B0045EB47 /* Utilities.m */; };
+		BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -158,6 +161,12 @@
 		BD955B441DC9D5AC0045EB47 /* RippleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleEffect.m; sourceTree = "<group>"; };
 		BD955B491DCA40E30045EB47 /* VisualEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualEffectViewController.h; sourceTree = "<group>"; };
 		BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualEffectViewController.m; sourceTree = "<group>"; };
+		BD955B4D1DCB215C0045EB47 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		BD955B4E1DCB215C0045EB47 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		BD955B511DCB2D0B0045EB47 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		BD955B521DCB2D0B0045EB47 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		BD955B551DCC8A850045EB47 /* StackViewFirstSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewFirstSampleViewController.h; sourceTree = "<group>"; };
+		BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewFirstSampleViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -238,6 +247,7 @@
 			children = (
 				BD734ADE1D9241F600D8C0F7 /* View */,
 				BD734AE11D92427B00D8C0F7 /* Model */,
+				BD955B501DCB2CAD0045EB47 /* Utilities */,
 				BD734AE31D9242DF00D8C0F7 /* Controller */,
 				BD734ADF1D92420300D8C0F7 /* Resources */,
 				BD734AE01D92425900D8C0F7 /* Configuration */,
@@ -262,6 +272,7 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BD955B541DCC8A4F0045EB47 /* Stack View */,
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
 				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BD955B231DC72DE60045EB47 /* Gestures */,
@@ -273,6 +284,7 @@
 				BD955B271DC75E6E0045EB47 /* MKMapViewCoreLocation */,
 				BD955B371DC8AEBE0045EB47 /* Presentation */,
 				BD955B3F1DC8F5450045EB47 /* Effects */,
+				BD955B4C1DCB20ED0045EB47 /* CollectionViewController */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -597,6 +609,33 @@
 			name = Shadows;
 			sourceTree = "<group>";
 		};
+		BD955B4C1DCB20ED0045EB47 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B4D1DCB215C0045EB47 /* CollectionViewController.h */,
+				BD955B4E1DCB215C0045EB47 /* CollectionViewController.m */,
+			);
+			name = CollectionViewController;
+			sourceTree = "<group>";
+		};
+		BD955B501DCB2CAD0045EB47 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B511DCB2D0B0045EB47 /* Utilities.h */,
+				BD955B521DCB2D0B0045EB47 /* Utilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		BD955B541DCC8A4F0045EB47 /* Stack View */ = {
+			isa = PBXGroup;
+			children = (
+				BD955B551DCC8A850045EB47 /* StackViewFirstSampleViewController.h */,
+				BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */,
+			);
+			name = "Stack View";
+			sourceTree = "<group>";
+		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,15 +871,18 @@
 				BDC0147E1D5A10CE007EEF90 /* ProtocolViewController.m in Sources */,
 				BD42E6CB1DBF431B007C3F5D /* BasicUIElementsViewController.m in Sources */,
 				BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */,
+				BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */,
 				BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				BD955B261DC73C320045EB47 /* PinchZoomGestureViewController.m in Sources */,
 				BDC014A11D5B0902007EEF90 /* NotificationSample.m in Sources */,
 				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,
+				BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */,
 				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
 				BDC014B61D5B2C05007EEF90 /* Student.m in Sources */,
 				BD5230421D784E5800BA1EA8 /* OperationQueueViewController.m in Sources */,
+				BD955B4F1DCB215C0045EB47 /* CollectionViewController.m in Sources */,
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
