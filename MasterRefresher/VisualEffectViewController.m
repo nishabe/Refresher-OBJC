@@ -2,8 +2,8 @@
 //  VisualEffectViewController.m
 //  Refresher-OBJC
 //
-//  Created by Aneesh Abraham01 on 11/2/16.
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Created by on 11/2/16.
+//  Copyright © 2016 Inc. All rights reserved.
 // Ref: https://www.omnigroup.com/developer/P5
 
 #import "VisualEffectViewController.h"

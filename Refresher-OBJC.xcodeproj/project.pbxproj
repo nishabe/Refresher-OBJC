@@ -50,6 +50,7 @@
 		BD955B4F1DCB215C0045EB47 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4E1DCB215C0045EB47 /* CollectionViewController.m */; };
 		BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B521DCB2D0B0045EB47 /* Utilities.m */; };
 		BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */; };
+		BD955B5A1DCC95030045EB47 /* StackViewSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -167,6 +168,8 @@
 		BD955B521DCB2D0B0045EB47 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		BD955B551DCC8A850045EB47 /* StackViewFirstSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewFirstSampleViewController.h; sourceTree = "<group>"; };
 		BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewFirstSampleViewController.m; sourceTree = "<group>"; };
+		BD955B581DCC95030045EB47 /* StackViewSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewSecondViewController.h; sourceTree = "<group>"; };
+		BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewSecondViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -272,7 +275,6 @@
 		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				BD955B541DCC8A4F0045EB47 /* Stack View */,
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
 				BD2F039F1DBA273C00163180 /* Keyboard */,
 				BD955B231DC72DE60045EB47 /* Gestures */,
@@ -285,6 +287,7 @@
 				BD955B371DC8AEBE0045EB47 /* Presentation */,
 				BD955B3F1DC8F5450045EB47 /* Effects */,
 				BD955B4C1DCB20ED0045EB47 /* CollectionViewController */,
+				BD955B541DCC8A4F0045EB47 /* Stack View */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -632,6 +635,8 @@
 			children = (
 				BD955B551DCC8A850045EB47 /* StackViewFirstSampleViewController.h */,
 				BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */,
+				BD955B581DCC95030045EB47 /* StackViewSecondViewController.h */,
+				BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */,
 			);
 			name = "Stack View";
 			sourceTree = "<group>";
@@ -883,6 +888,7 @@
 				BDC014B61D5B2C05007EEF90 /* Student.m in Sources */,
 				BD5230421D784E5800BA1EA8 /* OperationQueueViewController.m in Sources */,
 				BD955B4F1DCB215C0045EB47 /* CollectionViewController.m in Sources */,
+				BD955B5A1DCC95030045EB47 /* StackViewSecondViewController.m in Sources */,
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,

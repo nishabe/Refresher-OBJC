@@ -5,6 +5,7 @@
 //  Created by  on 11/4/16.
 //  Copyright © 2016  Inc. All rights reserved.
 // Ref: https://www.appcoda.com/stack-views-intro/
+// http://useyourloaf.com/blog/size-classes/
 
 #import "StackViewFirstSampleViewController.h"
 
