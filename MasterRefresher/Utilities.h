@@ -15,4 +15,6 @@
 + (float)getWidthofString:(NSString*)text
                 forFont:(UIFont*)font;
 + (UIColor*)getRandomColor;
++(NSString*)getFileName:(NSString*)parentFolderName withExtension:(NSString*)fileExtension;
++(NSString*)getTimeStamp;
 @end

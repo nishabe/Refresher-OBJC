@@ -32,6 +32,11 @@
 		BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */; };
 		BD5A81061DCDCC6F0066D3D4 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81051DCDCC6F0066D3D4 /* PageViewController.m */; };
 		BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81081DCDCC7F0066D3D4 /* ChildViewController.m */; };
+		BD5A810D1DCDE2550066D3D4 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A810C1DCDE2550066D3D4 /* ContainerViewController.m */; };
+		BD5A81131DCDEDB90066D3D4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5A81121DCDEDB90066D3D4 /* AVKit.framework */; };
+		BD5A81161DCDEFBB0066D3D4 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */; };
+		BD5A81181DCE57AA0066D3D4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */; };
+		BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -136,6 +141,13 @@
 		BD5A81051DCDCC6F0066D3D4 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		BD5A81071DCDCC7F0066D3D4 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		BD5A81081DCDCC7F0066D3D4 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		BD5A810B1DCDE2550066D3D4 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		BD5A810C1DCDE2550066D3D4 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		BD5A81121DCDEDB90066D3D4 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		BD5A81141DCDEFBB0066D3D4 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Loop 01- Dreamy.mp3"; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -218,6 +230,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5A81181DCE57AA0066D3D4 /* MediaPlayer.framework in Frameworks */,
+				BD5A81131DCDEDB90066D3D4 /* AVKit.framework in Frameworks */,
 				BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */,
 				BD955B301DC76A470045EB47 /* MapKit.framework in Frameworks */,
 			);
@@ -295,6 +309,8 @@
 				BD955B4C1DCB20ED0045EB47 /* CollectionViewController */,
 				BD955B541DCC8A4F0045EB47 /* Stack View */,
 				BD5A81031DCDCC460066D3D4 /* UI PageView Controller */,
+				BD5A810A1DCDE2160066D3D4 /* Container View */,
+				BD5A810E1DCDEC390066D3D4 /* AudioVideo */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -390,6 +406,24 @@
 			name = "UI PageView Controller";
 			sourceTree = "<group>";
 		};
+		BD5A810A1DCDE2160066D3D4 /* Container View */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A810B1DCDE2550066D3D4 /* ContainerViewController.h */,
+				BD5A810C1DCDE2550066D3D4 /* ContainerViewController.m */,
+			);
+			name = "Container View";
+			sourceTree = "<group>";
+		};
+		BD5A810E1DCDEC390066D3D4 /* AudioVideo */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A81141DCDEFBB0066D3D4 /* PlayerViewController.h */,
+				BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */,
+			);
+			name = AudioVideo;
+			sourceTree = "<group>";
+		};
 		BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +455,7 @@
 		BD734ADF1D92420300D8C0F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */,
 				BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */,
 				9CA39B321CB38CFD003B0ECA /* Assets.xcassets */,
 			);
@@ -586,6 +621,8 @@
 		BD955B3E1DC8B6ED0045EB47 /* Internal Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */,
+				BD5A81121DCDEDB90066D3D4 /* AVKit.framework */,
 				BD955B311DC76A4D0045EB47 /* CoreLocation.framework */,
 				BD955B2F1DC76A470045EB47 /* MapKit.framework */,
 			);
@@ -864,6 +901,7 @@
 				9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */,
 				BDEDE1401CC9FC35003B3A09 /* Notes in Resources */,
 				BD734AE91D95388A00D8C0F7 /* postserver.py in Resources */,
+				BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */,
 				BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */,
 				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
 				9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */,
@@ -914,7 +952,9 @@
 				BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */,
 				BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
+				BD5A81161DCDEFBB0066D3D4 /* PlayerViewController.m in Sources */,
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
+				BD5A810D1DCDE2550066D3D4 /* ContainerViewController.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */,
