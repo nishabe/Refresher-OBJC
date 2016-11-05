@@ -7,6 +7,7 @@
 //
 
 #import "ChildViewController.h"
+#import "Utilities.h"
 
 @interface ChildViewController ()
 
@@ -17,9 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Setting bg color
+    self.view.backgroundColor = [Utilities getRandomColor];
+    // Creating label
     UILabel *aLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
     aLabel.font = [UIFont boldSystemFontOfSize:24];
-    aLabel.center = self.view. center;
+    aLabel.center = self.view.center;
     [aLabel setBackgroundColor:[UIColor clearColor]];
     NSString* labelString = [NSString stringWithFormat:@"Screen %d",(int)self.index + 1];
     [aLabel setText:labelString];

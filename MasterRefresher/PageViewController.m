@@ -4,11 +4,10 @@
 //
 //  Created by   on 11/5/16.
 //  Copyright © 2016    Inc. All rights reserved.
-//
+// Ref: http://www.appcoda.com/uipageviewcontroller-tutorial-intro/
 
 #import "PageViewController.h"
 #import "ChildViewController.h"
-#import "Utilities.h"
 
 @interface PageViewController ()<UIPageViewControllerDataSource>
 @property (strong, nonatomic) UIPageViewController *pageController;
@@ -44,7 +43,6 @@
     
     ChildViewController *childViewController = [[ChildViewController alloc] init];
     childViewController.index = index;
-    childViewController.view.backgroundColor = [Utilities getRandomColor];
     return childViewController;
 }
 
