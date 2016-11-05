@@ -30,6 +30,8 @@
 		BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230471D7DDA1000BA1EA8 /* ConcurrentOperation.m */; };
 		BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */; };
 		BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */; };
+		BD5A81061DCDCC6F0066D3D4 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81051DCDCC6F0066D3D4 /* PageViewController.m */; };
+		BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81081DCDCC7F0066D3D4 /* ChildViewController.m */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -130,6 +132,10 @@
 		BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCommunicationViewController.m; sourceTree = "<group>"; };
 		BD5230621D7DF07600BA1EA8 /* NetworkCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCommunication.h; sourceTree = "<group>"; };
 		BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCommunication.m; sourceTree = "<group>"; };
+		BD5A81041DCDCC6F0066D3D4 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		BD5A81051DCDCC6F0066D3D4 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		BD5A81071DCDCC7F0066D3D4 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		BD5A81081DCDCC7F0066D3D4 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -288,6 +294,7 @@
 				BD955B3F1DC8F5450045EB47 /* Effects */,
 				BD955B4C1DCB20ED0045EB47 /* CollectionViewController */,
 				BD955B541DCC8A4F0045EB47 /* Stack View */,
+				BD5A81031DCDCC460066D3D4 /* UI PageView Controller */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -370,6 +377,17 @@
 				BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */,
 			);
 			name = NetworkCommunication;
+			sourceTree = "<group>";
+		};
+		BD5A81031DCDCC460066D3D4 /* UI PageView Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A81041DCDCC6F0066D3D4 /* PageViewController.h */,
+				BD5A81051DCDCC6F0066D3D4 /* PageViewController.m */,
+				BD5A81071DCDCC7F0066D3D4 /* ChildViewController.h */,
+				BD5A81081DCDCC7F0066D3D4 /* ChildViewController.m */,
+			);
+			name = "UI PageView Controller";
 			sourceTree = "<group>";
 		};
 		BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */ = {
@@ -878,6 +896,7 @@
 				BD5230611D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m in Sources */,
 				BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */,
 				BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */,
+				BD5A81061DCDCC6F0066D3D4 /* PageViewController.m in Sources */,
 				9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */,
 				BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */,
 				BD955B261DC73C320045EB47 /* PinchZoomGestureViewController.m in Sources */,
@@ -898,6 +917,7 @@
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
+				BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
 				BD5230451D7D875200BA1EA8 /* NonConCurrentOperation.m in Sources */,
 				BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */,
