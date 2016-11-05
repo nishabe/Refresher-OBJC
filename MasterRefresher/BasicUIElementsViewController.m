@@ -45,6 +45,7 @@
     [self createDatePicker];
     [self createImageView];
     [self customizeNavigationBar];
+    [self createCustomButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -306,7 +307,27 @@
         NSLog(@"Tapped on \"Delete photo\" ");
     }]];
     [self presentViewController:actionSheet animated:YES completion:nil];
-    
+}
+
+- (void)createCustomButton{
+
+    UIButton *customButton = [UIButton buttonWithType: UIButtonTypeCustom];
+    [customButton setBackgroundColor: [UIColor lightGrayColor]];
+    [customButton setTitleColor:[UIColor blackColor] forState:
+     UIControlStateHighlighted];
+    [customButton addTarget:self action:@selector(didTapOnButton:) forControlEvents:UIControlEventTouchUpInside];
+    //sets background image for normal state
+    [customButton setBackgroundImage:[UIImage imageNamed:
+                                      @"monkey_2"]
+                            forState:UIControlStateNormal];
+    //sets background image for highlighted state
+    [customButton setBackgroundImage:[UIImage imageNamed:
+                                      @"monkey_3"]
+                            forState:UIControlStateHighlighted];
+    [customButton setFrame:CGRectMake(ORIGIN_X, ORIGIN_Y * 44, 45, 42)];
+    // Add title if needed
+    [customButton setTitle:@"" forState:UIControlStateNormal];
+    [self.scroller addSubview:customButton];
 }
 #pragma mark Action of Button Tap
 

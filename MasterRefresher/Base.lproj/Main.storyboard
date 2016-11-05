@@ -497,7 +497,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="stack view" id="dH0-SS-7Ke">
+                            <tableViewSection headerTitle="stack view (Horizontal &amp; Vertical)" id="dH0-SS-7Ke">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="2fe-8t-cgI" detailTextLabel="6eH-eb-PNg" style="IBUITableViewCellStyleValue1" id="c6v-qp-Bri">
                                         <rect key="frame" x="0.0" y="1366" width="600" height="44"/>
