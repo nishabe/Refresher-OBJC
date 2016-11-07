@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PaidCustomer</key>
+	<true/>
+	<key>MonthOptions</key>
+	<array>
+		<string>Jan</string>
+		<string>Feb</string>
+		<string>Mar</string>
+		<string>May</string>
+		<string>Apr</string>
+		<string>Jul</string>
+	</array>
+	<key>Credentials</key>
+	<dict>
+		<key>FirstName</key>
+		<string>John</string>
+		<key>SecondName</key>
+		<string>AppleSeed</string>
+	</dict>
+</dict>
+</plist>

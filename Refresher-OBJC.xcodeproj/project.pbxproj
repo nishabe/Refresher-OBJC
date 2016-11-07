@@ -37,6 +37,7 @@
 		BD5A81161DCDEFBB0066D3D4 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */; };
 		BD5A81181DCE57AA0066D3D4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */; };
 		BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */; };
+		BD5A811E1DCEF1170066D3D4 /* PersitenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A811D1DCEF1170066D3D4 /* PersitenceViewController.m */; };
 		BD5DB5BE1D6EFDD80012F7E4 /* BlockWebserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */; };
 		BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C11D6F656F0012F7E4 /* IntrospectionViewController.m */; };
 		BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DB5C41D6F65EB0012F7E4 /* SecretMission.m */; };
@@ -73,6 +74,10 @@
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
 		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
+		BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */; };
+		BDD33B7F1DCF217C00BAD31B /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD33B7E1DCF217C00BAD31B /* Settings.plist */; };
+		BDD33B811DCF3A2900BAD31B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD33B801DCF3A2900BAD31B /* libsqlite3.0.tbd */; };
+		BDD33B851DCF3A6200BAD31B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD33B841DCF3A6200BAD31B /* DBManager.m */; };
 		BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED62041D9CCCE40067AA38 /* WKWebViewController.m */; };
 		BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */; };
 		BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */; };
@@ -148,6 +153,8 @@
 		BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Loop 01- Dreamy.mp3"; sourceTree = "<group>"; };
+		BD5A811C1DCEF1170066D3D4 /* PersitenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersitenceViewController.h; sourceTree = "<group>"; };
+		BD5A811D1DCEF1170066D3D4 /* PersitenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersitenceViewController.m; sourceTree = "<group>"; };
 		BD5DB5BC1D6EFDD80012F7E4 /* BlockWebserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockWebserviceViewController.h; sourceTree = "<group>"; };
 		BD5DB5BD1D6EFDD80012F7E4 /* BlockWebserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockWebserviceViewController.m; sourceTree = "<group>"; };
 		BD5DB5C01D6F656F0012F7E4 /* IntrospectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntrospectionViewController.h; sourceTree = "<group>"; };
@@ -217,6 +224,12 @@
 		BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCoredataHomeViewController.m; sourceTree = "<group>"; };
 		BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDetailViewController.h; sourceTree = "<group>"; };
 		BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDetailViewController.m; sourceTree = "<group>"; };
+		BDD33B7B1DCF05DA00BAD31B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		BDD33B7E1DCF217C00BAD31B /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		BDD33B801DCF3A2900BAD31B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BDD33B831DCF3A6200BAD31B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		BDD33B841DCF3A6200BAD31B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		BDED62031D9CCCE40067AA38 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		BDED62041D9CCCE40067AA38 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		BDEDE13A1CC9F316003B3A09 /* WebViewLocalLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewLocalLoadViewController.h; sourceTree = "<group>"; };
@@ -230,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD33B811DCF3A2900BAD31B /* libsqlite3.0.tbd in Frameworks */,
 				BD5A81181DCE57AA0066D3D4 /* MediaPlayer.framework in Frameworks */,
 				BD5A81131DCDEDB90066D3D4 /* AVKit.framework in Frameworks */,
 				BD955B321DC76A4D0045EB47 /* CoreLocation.framework in Frameworks */,
@@ -318,7 +332,6 @@
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
 			isa = PBXGroup;
 			children = (
-				BD955B2B1DC75F2E0045EB47 /* Design patterns */,
 				BD955B281DC75EFB0045EB47 /* Data Persistence */,
 				BD955B291DC75F0E0045EB47 /* Multithreading */,
 				BD955B2A1DC75F1E0045EB47 /* Category and Extension */,
@@ -424,6 +437,15 @@
 			name = AudioVideo;
 			sourceTree = "<group>";
 		};
+		BD5A811B1DCEF0D30066D3D4 /* FilePersitence */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A811C1DCEF1170066D3D4 /* PersitenceViewController.h */,
+				BD5A811D1DCEF1170066D3D4 /* PersitenceViewController.m */,
+			);
+			name = FilePersitence;
+			sourceTree = "<group>";
+		};
 		BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA39B371CB38CFD003B0ECA /* Info.plist */,
+				BDD33B7E1DCF217C00BAD31B /* Settings.plist */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -567,6 +590,8 @@
 		BD955B281DC75EFB0045EB47 /* Data Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				BDD33B821DCF3A5200BAD31B /* sqlite */,
+				BD5A811B1DCEF0D30066D3D4 /* FilePersitence */,
 				BDC831271CE358BE0015DB42 /* CoreData */,
 			);
 			name = "Data Persistence";
@@ -589,13 +614,6 @@
 				BDC014761D5A0535007EEF90 /* Extension */,
 			);
 			name = "Category and Extension";
-			sourceTree = "<group>";
-		};
-		BD955B2B1DC75F2E0045EB47 /* Design patterns */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Design patterns";
 			sourceTree = "<group>";
 		};
 		BD955B331DC8A0290045EB47 /* SFSafariViewController */ = {
@@ -621,6 +639,7 @@
 		BD955B3E1DC8B6ED0045EB47 /* Internal Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BDD33B801DCF3A2900BAD31B /* libsqlite3.0.tbd */,
 				BD5A81171DCE57A90066D3D4 /* MediaPlayer.framework */,
 				BD5A81121DCDEDB90066D3D4 /* AVKit.framework */,
 				BD955B311DC76A4D0045EB47 /* CoreLocation.framework */,
@@ -681,6 +700,8 @@
 			children = (
 				BD955B511DCB2D0B0045EB47 /* Utilities.h */,
 				BD955B521DCB2D0B0045EB47 /* Utilities.m */,
+				BDD33B7B1DCF05DA00BAD31B /* KeychainItemWrapper.h */,
+				BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -804,6 +825,15 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		BDD33B821DCF3A5200BAD31B /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				BDD33B831DCF3A6200BAD31B /* DBManager.h */,
+				BDD33B841DCF3A6200BAD31B /* DBManager.m */,
+			);
+			name = sqlite;
+			sourceTree = "<group>";
+		};
 		BDED62021D9CCCA60067AA38 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -900,6 +930,7 @@
 			files = (
 				9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */,
 				BDEDE1401CC9FC35003B3A09 /* Notes in Resources */,
+				BDD33B7F1DCF217C00BAD31B /* Settings.plist in Resources */,
 				BD734AE91D95388A00D8C0F7 /* postserver.py in Resources */,
 				BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */,
 				BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */,
@@ -925,6 +956,7 @@
 			files = (
 				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
 				BDC014861D5AFA80007EEF90 /* Logger.m in Sources */,
+				BD5A811E1DCEF1170066D3D4 /* PersitenceViewController.m in Sources */,
 				BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */,
 				BDC0149E1D5B08E3007EEF90 /* NotificationViewController.m in Sources */,
 				BD52303E1D76A72A00BA1EA8 /* UIViewController+Tracking.m in Sources */,
@@ -953,6 +985,7 @@
 				BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
 				BD5A81161DCDEFBB0066D3D4 /* PlayerViewController.m in Sources */,
+				BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */,
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
 				BD5A810D1DCDE2550066D3D4 /* ContainerViewController.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
@@ -960,6 +993,7 @@
 				BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
 				BD5230451D7D875200BA1EA8 /* NonConCurrentOperation.m in Sources */,
+				BDD33B851DCF3A6200BAD31B /* DBManager.m in Sources */,
 				BD2C5CAC1D6D657900A25C87 /* BlockTester.m in Sources */,
 				BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */,
 				BD5DB5C51D6F65EB0012F7E4 /* SecretMission.m in Sources */,

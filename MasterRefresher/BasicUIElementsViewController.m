@@ -396,7 +396,7 @@
     }
 }
 
-#pragma marks Picker View Data Source
+#pragma mark Picker View Data Source
 
 // returns the number of 'columns' to display.
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -408,7 +408,7 @@
     return self.pickerItems.count;
 }
 
-#pragma marks Picker View Delegate
+#pragma mark Picker View Delegate
 
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
