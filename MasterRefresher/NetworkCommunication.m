@@ -191,6 +191,37 @@
         [self.uploadTask resume];
     }
 }
+- (void)startWebServiceRequestTask{
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:self.urlToLoad];
+    NSString * params =[NSString stringWithFormat:@"paramName=%@",@"paramValue"] ;
+    request.HTTPMethod = @"POST";
+    [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+    NSURLSessionDataTask *dataTask =
+    [session dataTaskWithRequest:request
+               completionHandler:^(NSData *data,NSURLResponse *response,NSError *error) {
+                   // handle HTTP errors here
+                   if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                       int statusCode = (int)[(NSHTTPURLResponse *)response statusCode];
+                       if (statusCode != 200) {
+                           NSLog(@"dataTaskWithRequest HTTP status code: %d", (int)statusCode);
+                           return;
+                       }
+                   }
+                   if (!error) {
+                       NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:data, @"data", nil];
+                       if([_delegate respondsToSelector:@selector(didRecieveResponse:)]) {
+                           [_delegate performSelector:@selector(didRecieveResponse:) withObject:info];
+                       }
+                   }
+                   else{
+                       NSLog(@"%@",error.description);
+                   }
+                   
+               }];
+    [dataTask resume];
+}
 
 #pragma mark - NSURLSessionDownloadDelegate
 

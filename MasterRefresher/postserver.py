@@ -46,10 +46,10 @@ class Handler(BaseHTTPRequestHandler):
            # but this isn't as clean as it doesn't allow the client to send
            # further requests unless the client robustly handles an unexpected
            # closed connection.
-           response  = "<html><head><title>POST RESPONSE</title></head>"
-           response += "<body><p>The file was uploaded.</p>"
-           response += "</body></html>"
-
+#           response  = "<html><head><title>POST RESPONSE</title></head>"
+#           response += "<body><p>The file was uploaded.</p>"
+#           response += "</body></html>"
+           response  = "{\"uid\":\"020110\",\"companies\":[\"Apple\",\"Google\",\"Facebook\"]}"
            # Send response
            self.send_response(200)
            self.send_header('Content-Type', 'text/html')
@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     # Specify server name OR ip address 
     # DO NOT USE localhost or 127.0.0.1
-    SERVERID = '10.155.111.5'
+    SERVERID = '10.155.111.97'
 
     # Specify port.
     PORT     = 42001

@@ -16,5 +16,5 @@
 - (void)showDownloadProgress:(float)progress;
 - (void)showFile:(NSString*)path;
 - (void)showUploadProgress:(float)progress;
-
+- (void)didRecieveResponse:(NSDictionary *)info;
 @end

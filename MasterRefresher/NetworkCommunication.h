@@ -25,9 +25,8 @@
 - (void)startFileDownloadTask;
 - (void)startBackgroundFileDownloadTask;
 - (void)startFileUploadTask;
-
-
--(void)pauseDownloadTask;
--(void)cancelDownloadTask;
+- (void)startWebServiceRequestTask;
+- (void)pauseDownloadTask;
+- (void)cancelDownloadTask;
 
 @end
