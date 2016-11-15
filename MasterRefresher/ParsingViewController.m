@@ -2,8 +2,8 @@
 //  ParsingViewController.m
 //  Refresher-OBJC
 //
-//  Created by Aneesh Abraham01 on 11/11/16.
-//  Copyright © 2016 Ammini Inc. All rights reserved.
+//  Created by on 11/11/16.
+//  Copyright © 2016 Inc. All rights reserved.
 // Ref: http://www.theappguruz.com/blog/xmlparsing-with-nsxmlparser-tutorial
 // http://www.appcoda.com/pull-to-refresh-uitableview-empty/
 
