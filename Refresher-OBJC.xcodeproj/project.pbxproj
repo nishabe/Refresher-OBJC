@@ -59,6 +59,7 @@
 		BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B521DCB2D0B0045EB47 /* Utilities.m */; };
 		BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */; };
 		BD955B5A1DCC95030045EB47 /* StackViewSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */; };
+		BDBCFF691DD5DB8000323DE4 /* ParsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBCFF681DD5DB8000323DE4 /* ParsingViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
 		BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014781D5A0551007EEF90 /* ExtensionViewController.m */; };
@@ -195,6 +196,8 @@
 		BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewFirstSampleViewController.m; sourceTree = "<group>"; };
 		BD955B581DCC95030045EB47 /* StackViewSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewSecondViewController.h; sourceTree = "<group>"; };
 		BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewSecondViewController.m; sourceTree = "<group>"; };
+		BDBCFF671DD5DB8000323DE4 /* ParsingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingViewController.h; sourceTree = "<group>"; };
+		BDBCFF681DD5DB8000323DE4 /* ParsingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
 		BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAdditions.m"; sourceTree = "<group>"; };
 		BDC014731D59FBA7007EEF90 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -284,8 +287,8 @@
 			children = (
 				BD734ADE1D9241F600D8C0F7 /* View */,
 				BD734AE11D92427B00D8C0F7 /* Model */,
-				BD955B501DCB2CAD0045EB47 /* Utilities */,
 				BD734AE31D9242DF00D8C0F7 /* Controller */,
+				BD955B501DCB2CAD0045EB47 /* Utilities */,
 				BD734ADF1D92420300D8C0F7 /* Resources */,
 				BD734AE01D92425900D8C0F7 /* Configuration */,
 				BD734AE51D9243DA00D8C0F7 /* Supporing Files */,
@@ -338,6 +341,7 @@
 				BDC0147A1D5A1099007EEF90 /* Design Patterns */,
 				BD5DB5BF1D6F65480012F7E4 /* ObjCRuntime */,
 				BD52305E1D7DEE5A00BA1EA8 /* NetworkCommunication */,
+				BDBCFF661DD5DB5300323DE4 /* Parsing */,
 			);
 			name = Concepts;
 			sourceTree = "<group>";
@@ -400,10 +404,10 @@
 			isa = PBXGroup;
 			children = (
 				BD5230491D7DDD4A00BA1EA8 /* NetworkOperationDelegate.h */,
-				BD52305F1D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.h */,
-				BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */,
 				BD5230621D7DF07600BA1EA8 /* NetworkCommunication.h */,
 				BD5230631D7DF07600BA1EA8 /* NetworkCommunication.m */,
+				BD52305F1D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.h */,
+				BD5230601D7DEE7E00BA1EA8 /* NetworkCommunicationViewController.m */,
 			);
 			name = NetworkCommunication;
 			sourceTree = "<group>";
@@ -717,6 +721,15 @@
 			name = "Stack View";
 			sourceTree = "<group>";
 		};
+		BDBCFF661DD5DB5300323DE4 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				BDBCFF671DD5DB8000323DE4 /* ParsingViewController.h */,
+				BDBCFF681DD5DB8000323DE4 /* ParsingViewController.m */,
+			);
+			name = Parsing;
+			sourceTree = "<group>";
+		};
 		BDC0146F1D59FA9A007EEF90 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -989,6 +1002,7 @@
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
 				BD5A810D1DCDE2550066D3D4 /* ContainerViewController.m in Sources */,
 				BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */,
+				BDBCFF691DD5DB8000323DE4 /* ParsingViewController.m in Sources */,
 				BDC0149A1D5AFDD7007EEF90 /* SingletonViewController.m in Sources */,
 				BD5A81091DCDCC7F0066D3D4 /* ChildViewController.m in Sources */,
 				BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */,
