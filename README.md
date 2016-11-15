@@ -4,6 +4,10 @@ The project is intended to act as a catalogue for User Interface, Objective C Co
 The purpose is not to include every minor aspects about Objective C, but to provide a simple reference material that comes handy during day today development related activities.
 
 The topics are divided in to two. They are 1. UI Controls 2. Concepts 
+
+![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/u.gif)
+![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/c.gif)
+
 #1. UI Controls  
 
 ### CONTROLS
