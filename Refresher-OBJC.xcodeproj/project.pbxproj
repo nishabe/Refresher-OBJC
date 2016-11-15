@@ -10,7 +10,6 @@
 		9CA39B251CB38CFD003B0ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B241CB38CFD003B0ECA /* main.m */; };
 		9CA39B281CB38CFD003B0ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B271CB38CFD003B0ECA /* AppDelegate.m */; };
 		9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B2F1CB38CFD003B0ECA /* Main.storyboard */; };
-		9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B321CB38CFD003B0ECA /* Assets.xcassets */; };
 		9CA39B361CB38CFD003B0ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA39B341CB38CFD003B0ECA /* LaunchScreen.storyboard */; };
 		9CA39B411CB38CFD003B0ECA /* MasterRefresherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B401CB38CFD003B0ECA /* MasterRefresherTests.m */; };
 		9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA39B4E1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m */; };
@@ -59,6 +58,9 @@
 		BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B521DCB2D0B0045EB47 /* Utilities.m */; };
 		BD955B571DCC8A850045EB47 /* StackViewFirstSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */; };
 		BD955B5A1DCC95030045EB47 /* StackViewSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */; };
+		BDB8444B1DDB21C200EC978F /* SequeHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB8444A1DDB21C200EC978F /* SequeHomeViewController.m */; };
+		BDB8444E1DDB250C00EC978F /* CalenderViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB8444D1DDB250C00EC978F /* CalenderViewControl.m */; };
+		BDB844501DDB265000EC978F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB8444F1DDB265000EC978F /* Assets.xcassets */; };
 		BDBCFF691DD5DB8000323DE4 /* ParsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBCFF681DD5DB8000323DE4 /* ParsingViewController.m */; };
 		BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014711D59FAF0007EEF90 /* NSString+StringAdditions.m */; };
 		BDC014751D59FBA7007EEF90 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC014741D59FBA7007EEF90 /* CategoryViewController.m */; };
@@ -101,7 +103,6 @@
 		9CA39B261CB38CFD003B0ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CA39B271CB38CFD003B0ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CA39B301CB38CFD003B0ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CA39B321CB38CFD003B0ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA39B351CB38CFD003B0ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CA39B371CB38CFD003B0ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA39B3C1CB38CFD003B0ECA /* Refresher-OBJC-OBJC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refresher-OBJC-OBJC.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +197,11 @@
 		BD955B561DCC8A850045EB47 /* StackViewFirstSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewFirstSampleViewController.m; sourceTree = "<group>"; };
 		BD955B581DCC95030045EB47 /* StackViewSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewSecondViewController.h; sourceTree = "<group>"; };
 		BD955B591DCC95030045EB47 /* StackViewSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewSecondViewController.m; sourceTree = "<group>"; };
+		BDB844491DDB21C200EC978F /* SequeHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequeHomeViewController.h; sourceTree = "<group>"; };
+		BDB8444A1DDB21C200EC978F /* SequeHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequeHomeViewController.m; sourceTree = "<group>"; };
+		BDB8444C1DDB250C00EC978F /* CalenderViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderViewControl.h; sourceTree = "<group>"; };
+		BDB8444D1DDB250C00EC978F /* CalenderViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderViewControl.m; sourceTree = "<group>"; };
+		BDB8444F1DDB265000EC978F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDBCFF671DD5DB8000323DE4 /* ParsingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingViewController.h; sourceTree = "<group>"; };
 		BDBCFF681DD5DB8000323DE4 /* ParsingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingViewController.m; sourceTree = "<group>"; };
 		BDC014701D59FAF0007EEF90 /* NSString+StringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAdditions.h"; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 				BD5A81031DCDCC460066D3D4 /* UI PageView Controller */,
 				BD5A810A1DCDE2160066D3D4 /* Container View */,
 				BD5A810E1DCDEC390066D3D4 /* AudioVideo */,
+				BDB844481DDB217D00EC978F /* Segues */,
 			);
 			name = "UI and Libraries";
 			sourceTree = "<group>";
@@ -481,9 +488,9 @@
 		BD734ADF1D92420300D8C0F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDB8444F1DDB265000EC978F /* Assets.xcassets */,
 				BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */,
 				BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */,
-				9CA39B321CB38CFD003B0ECA /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -721,6 +728,17 @@
 			name = "Stack View";
 			sourceTree = "<group>";
 		};
+		BDB844481DDB217D00EC978F /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				BDB844491DDB21C200EC978F /* SequeHomeViewController.h */,
+				BDB8444A1DDB21C200EC978F /* SequeHomeViewController.m */,
+				BDB8444C1DDB250C00EC978F /* CalenderViewControl.h */,
+				BDB8444D1DDB250C00EC978F /* CalenderViewControl.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
 		BDBCFF661DD5DB5300323DE4 /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
@@ -948,7 +966,7 @@
 				BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */,
 				BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */,
 				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
-				9CA39B331CB38CFD003B0ECA /* Assets.xcassets in Resources */,
+				BDB844501DDB265000EC978F /* Assets.xcassets in Resources */,
 				9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -968,6 +986,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */,
+				BDB8444B1DDB21C200EC978F /* SequeHomeViewController.m in Sources */,
 				BDC014861D5AFA80007EEF90 /* Logger.m in Sources */,
 				BD5A811E1DCEF1170066D3D4 /* PersitenceViewController.m in Sources */,
 				BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */,
@@ -994,6 +1013,7 @@
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
+				BDB8444E1DDB250C00EC978F /* CalenderViewControl.m in Sources */,
 				BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */,
 				BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
