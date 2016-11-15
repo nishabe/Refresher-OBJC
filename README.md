@@ -7,8 +7,8 @@ The topics are divided in to two. They are 1. UI Controls 2. Concepts
 
 ![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/u.gif)
 ![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/c.gif)
-
-#1. UI Controls  
+***
+##1. UI Controls  
 
 ### CONTROLS
 Basic Elements
@@ -47,10 +47,8 @@ Page view controller Sample
 Container view controller Sample
 ### AUDIO / VIDEO MEDIA
 Audio & Video Playback Sample
-
-=================================================
-
-#2. Concepts 
+***
+##2. Concepts 
 ### DATA PERSITENCE
 Coredata    
 NSUserDefaults,Keychain, Plist
@@ -75,3 +73,7 @@ NSURLConnection & NSURLSession
 ### PARSING
 JSON Parsing     
 XML Parsing (with pull to refresh)
+***
+### License
+
+`Refresher-OBJC` is released under the MIT license.
