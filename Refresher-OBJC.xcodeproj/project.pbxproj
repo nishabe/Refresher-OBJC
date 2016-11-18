@@ -77,6 +77,7 @@
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
 		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
+		BDD1A7851DDF1DA90036B564 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A7841DDF1DA90036B564 /* README.md */; };
 		BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */; };
 		BDD33B7F1DCF217C00BAD31B /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD33B7E1DCF217C00BAD31B /* Settings.plist */; };
 		BDD33B811DCF3A2900BAD31B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD33B801DCF3A2900BAD31B /* libsqlite3.0.tbd */; };
@@ -166,7 +167,6 @@
 		BD5DB5C61D6F6AE60012F7E4 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
 		BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 5MB_UPLOAD_FILE.pdf; sourceTree = "<group>"; };
 		BD734AE81D95388A00D8C0F7 /* postserver.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = postserver.py; sourceTree = "<group>"; };
-		BD83BE7C1D30E5E700E0FA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD83BE841D3110CB00E0FA53 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		BD83BE851D3110CB00E0FA53 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		BD955B201DC22E650045EB47 /* PinchZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchZoomViewController.h; sourceTree = "<group>"; };
@@ -233,6 +233,7 @@
 		BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCoredataHomeViewController.m; sourceTree = "<group>"; };
 		BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDetailViewController.h; sourceTree = "<group>"; };
 		BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDetailViewController.m; sourceTree = "<group>"; };
+		BDD1A7841DDF1DA90036B564 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BDD33B7B1DCF05DA00BAD31B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BDD33B7E1DCF217C00BAD31B /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
@@ -315,7 +316,7 @@
 			path = MasterRefresherTests;
 			sourceTree = "<group>";
 		};
-		9CA39B4B1CB3A932003B0ECA /* UI and Libraries */ = {
+		9CA39B4B1CB3A932003B0ECA /* UI Controls */ = {
 			isa = PBXGroup;
 			children = (
 				BD2F03A31DBDF6AA00163180 /* UI Controls */,
@@ -336,7 +337,7 @@
 				BD5A810E1DCDEC390066D3D4 /* AudioVideo */,
 				BDB844481DDB217D00EC978F /* Segues */,
 			);
-			name = "UI and Libraries";
+			name = "UI Controls";
 			sourceTree = "<group>";
 		};
 		9CA39B4C1CB3A94A003B0ECA /* Concepts */ = {
@@ -517,7 +518,7 @@
 			children = (
 				9CA39B261CB38CFD003B0ECA /* AppDelegate.h */,
 				9CA39B271CB38CFD003B0ECA /* AppDelegate.m */,
-				9CA39B4B1CB3A932003B0ECA /* UI and Libraries */,
+				9CA39B4B1CB3A932003B0ECA /* UI Controls */,
 				9CA39B4C1CB3A94A003B0ECA /* Concepts */,
 			);
 			name = Controller;
@@ -536,8 +537,8 @@
 			children = (
 				9CA39B241CB38CFD003B0ECA /* main.m */,
 				BD734AE81D95388A00D8C0F7 /* postserver.py */,
-				BD83BE7C1D30E5E700E0FA53 /* README.md */,
 				BDEDE13F1CC9FC35003B3A09 /* Notes */,
+				BDD1A7841DDF1DA90036B564 /* README.md */,
 			);
 			name = "Supporing Files";
 			sourceTree = "<group>";
@@ -1039,6 +1040,7 @@
 				BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */,
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
 				BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */,
+				BDD1A7851DDF1DA90036B564 /* README.md in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,

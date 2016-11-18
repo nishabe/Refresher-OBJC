@@ -47,7 +47,11 @@ Page view controller Sample
 Container view controller Sample
 ### AUDIO / VIDEO MEDIA
 Audio & Video Playback Sample
+### STORYBOARDS & SEQUES
+Segues Sample
+
 ***
+
 ##2. Concepts 
 ### DATA PERSITENCE
 Coredata    
