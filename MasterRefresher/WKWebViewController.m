@@ -31,11 +31,6 @@ Reference:
     [self loadPrimaryPageHTML];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)loadPrimaryPageHTML{
 
     NSURLRequest *requestObject = [NSURLRequest requestWithURL:[NSURL URLWithString:URL_2]];

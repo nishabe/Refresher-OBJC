@@ -77,7 +77,6 @@
 		BDC831261CE358AB0015DB42 /* Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDC831241CE358AB0015DB42 /* Refresher.xcdatamodeld */; };
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
 		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
-		BDD1A7851DDF1DA90036B564 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A7841DDF1DA90036B564 /* README.md */; };
 		BDD1A7881DDF1EC30036B564 /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A7871DDF1EC30036B564 /* HTMLViewController.m */; };
 		BDD1A78A1DDF1FB40036B564 /* html5Video.html in Resources */ = {isa = PBXBuildFile; fileRef = BDD1A7891DDF1FB40036B564 /* html5Video.html */; };
 		BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */; };
@@ -1050,7 +1049,6 @@
 				BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */,
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
 				BD955B2E1DC75FE10045EB47 /* MKMapViewViewController.m in Sources */,
-				BDD1A7851DDF1DA90036B564 /* README.md in Sources */,
 				BD5230481D7DDA1000BA1EA8 /* ConcurrentOperation.m in Sources */,
 				BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */,
 				BD5DB5C21D6F656F0012F7E4 /* IntrospectionViewController.m in Sources */,
