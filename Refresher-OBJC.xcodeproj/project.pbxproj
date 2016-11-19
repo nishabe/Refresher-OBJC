@@ -78,6 +78,8 @@
 		BDC8312D1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312C1CE3614F0015DB42 /* SimpleCoredataHomeViewController.m */; };
 		BDC831301CE361750015DB42 /* CoreDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */; };
 		BDD1A7851DDF1DA90036B564 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A7841DDF1DA90036B564 /* README.md */; };
+		BDD1A7881DDF1EC30036B564 /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A7871DDF1EC30036B564 /* HTMLViewController.m */; };
+		BDD1A78A1DDF1FB40036B564 /* html5Video.html in Resources */ = {isa = PBXBuildFile; fileRef = BDD1A7891DDF1FB40036B564 /* html5Video.html */; };
 		BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */; };
 		BDD33B7F1DCF217C00BAD31B /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD33B7E1DCF217C00BAD31B /* Settings.plist */; };
 		BDD33B811DCF3A2900BAD31B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD33B801DCF3A2900BAD31B /* libsqlite3.0.tbd */; };
@@ -234,6 +236,9 @@
 		BDC8312E1CE361750015DB42 /* CoreDataDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDetailViewController.h; sourceTree = "<group>"; };
 		BDC8312F1CE361750015DB42 /* CoreDataDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDetailViewController.m; sourceTree = "<group>"; };
 		BDD1A7841DDF1DA90036B564 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDD1A7861DDF1EC30036B564 /* HTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLViewController.h; sourceTree = "<group>"; };
+		BDD1A7871DDF1EC30036B564 /* HTMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLViewController.m; sourceTree = "<group>"; };
+		BDD1A7891DDF1FB40036B564 /* html5Video.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = html5Video.html; sourceTree = "<group>"; };
 		BDD33B7B1DCF05DA00BAD31B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		BDD33B7C1DCF05DA00BAD31B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		BDD33B7E1DCF217C00BAD31B /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
@@ -445,6 +450,9 @@
 			children = (
 				BD5A81141DCDEFBB0066D3D4 /* PlayerViewController.h */,
 				BD5A81151DCDEFBB0066D3D4 /* PlayerViewController.m */,
+				BDD1A7861DDF1EC30036B564 /* HTMLViewController.h */,
+				BDD1A7871DDF1EC30036B564 /* HTMLViewController.m */,
+				BDD1A7891DDF1FB40036B564 /* html5Video.html */,
 			);
 			name = AudioVideo;
 			sourceTree = "<group>";
@@ -965,6 +973,7 @@
 				BDD33B7F1DCF217C00BAD31B /* Settings.plist in Resources */,
 				BD734AE91D95388A00D8C0F7 /* postserver.py in Resources */,
 				BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */,
+				BDD1A78A1DDF1FB40036B564 /* html5Video.html in Resources */,
 				BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */,
 				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
 				BDB844501DDB265000EC978F /* Assets.xcassets in Resources */,
@@ -1013,6 +1022,7 @@
 				BD955B5A1DCC95030045EB47 /* StackViewSecondViewController.m in Sources */,
 				BD83BE861D3110CB00E0FA53 /* GCDViewController.m in Sources */,
 				BD52303B1D7576B100BA1EA8 /* TaxProcessor+Snoopy.m in Sources */,
+				BDD1A7881DDF1EC30036B564 /* HTMLViewController.m in Sources */,
 				BDC014791D5A0551007EEF90 /* ExtensionViewController.m in Sources */,
 				BDB8444E1DDB250C00EC978F /* CalenderViewControl.m in Sources */,
 				BD2F03A21DBA276C00163180 /* KeyboardHandlingViewController.m in Sources */,
