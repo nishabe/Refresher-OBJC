@@ -5,7 +5,7 @@ The purpose is not to include every minor aspects about Objective C, but to prov
 
 The topics are divided in to two. They are:   
 
-1. UI Controls   
+1. User Interface Elements   
 2. Concepts   
 
 Here is a GIF showing a summary of features included in this repo.   
@@ -13,13 +13,17 @@ Here is a GIF showing a summary of features included in this repo.
 ![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/u.gif)
 ![alt tag](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/c.gif)
 
-Here is a short video of the 'UI Controls' tab.   
+Here is a short video of the 'User Interface Elements' tab.   
 
-Here is a short video of the 'Concepts' tab.   
+[![Repo in Action](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/UIYtube.jpg)](https://youtu.be/JzDzZ_5BAoA)
 
+Here is a short video of the 'Concepts' tab.  
+
+[![Repo in Action](https://github.com/nishabe/Refresher-OBJC/blob/master/Screenshots/concepts_ytube.jpg)](https://youtu.be/KTWcFfle8KI)
+  
 
 ***
-##1. UI Controls  
+##1. User Interface Elements  
 
 ### CONTROLS
 Basic Elements   
