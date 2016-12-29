@@ -11,7 +11,24 @@ The topics are divided in to two. They are 1. UI Controls 2. Concepts
 ##1. UI Controls  
 
 ### CONTROLS
-Basic Elements
+Basic Elements   
+##### UIScrollView
+##### UILabel  
+##### UIButton  
+##### UITextField  
+##### UITextView  
+##### UISwitch  
+##### UIStepper  
+##### UISlider  
+##### UIProgressView  
+##### UISegmentedControl  
+##### UIActivityIndicatorView  
+##### UIPickerView   
+##### UIDatePicker  
+##### UIImageView  
+##### UIBarButtonItem  
+##### UIAlertController  
+##### Along with NSDateFormatter,NSMutableAttributedString
 ### KEYBOARD HIDING  
 KB Dismissal, input accessory view
 ### GESTURE RECOGNITION  
