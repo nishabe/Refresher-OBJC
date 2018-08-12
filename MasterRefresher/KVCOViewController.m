@@ -55,7 +55,7 @@ static void *PrivateKVOContext = &PrivateKVOContext;
         if ([keyPath isEqualToString:@"age"]) {
             NSString* oldAge = (NSString *)[change objectForKey:@"old"];
             NSString* newAge = (NSString *)[change objectForKey:@"new"];
-            self.messageLabel.text = [NSString stringWithFormat:@"Old Age:%d, New Age:%d",[oldAge integerValue],[newAge integerValue]];
+            self.messageLabel.text = [NSString stringWithFormat:@"Old Age:%ld, New Age:%ld",(long)[oldAge integerValue],(long)[newAge integerValue]];
         }
     }
     else{
