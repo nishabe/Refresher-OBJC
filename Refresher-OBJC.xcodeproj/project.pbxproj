@@ -52,7 +52,6 @@
 		BD955B3A1DC8AEF30045EB47 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B391DC8AEF30045EB47 /* PresentationViewController.m */; };
 		BD955B3D1DC8B4550045EB47 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B3C1DC8B4550045EB47 /* PopViewController.m */; };
 		BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B411DC8F5630045EB47 /* EffectsViewController.m */; };
-		BD955B461DC9D5AC0045EB47 /* RippleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B441DC9D5AC0045EB47 /* RippleEffect.m */; };
 		BD955B4B1DCA40E30045EB47 /* VisualEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */; };
 		BD955B4F1DCB215C0045EB47 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B4E1DCB215C0045EB47 /* CollectionViewController.m */; };
 		BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD955B521DCB2D0B0045EB47 /* Utilities.m */; };
@@ -87,6 +86,7 @@
 		BDEDE13C1CC9F316003B3A09 /* WebViewLocalLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */; };
 		BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */; };
 		BDEDE1401CC9FC35003B3A09 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13F1CC9FC35003B3A09 /* Notes */; };
+		C43F7DFE21209E8900923D97 /* RippleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = C43F7DFC21209E8900923D97 /* RippleEffect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,8 +186,6 @@
 		BD955B3C1DC8B4550045EB47 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		BD955B401DC8F5630045EB47 /* EffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsViewController.h; sourceTree = "<group>"; };
 		BD955B411DC8F5630045EB47 /* EffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsViewController.m; sourceTree = "<group>"; };
-		BD955B431DC9D5AC0045EB47 /* RippleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleEffect.h; sourceTree = "<group>"; };
-		BD955B441DC9D5AC0045EB47 /* RippleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleEffect.m; sourceTree = "<group>"; };
 		BD955B491DCA40E30045EB47 /* VisualEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualEffectViewController.h; sourceTree = "<group>"; };
 		BD955B4A1DCA40E30045EB47 /* VisualEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualEffectViewController.m; sourceTree = "<group>"; };
 		BD955B4D1DCB215C0045EB47 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
@@ -250,6 +248,8 @@
 		BDEDE13B1CC9F316003B3A09 /* WebViewLocalLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewLocalLoadViewController.m; sourceTree = "<group>"; };
 		BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = localHtmlSample.html; sourceTree = "<group>"; };
 		BDEDE13F1CC9FC35003B3A09 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		C43F7DFC21209E8900923D97 /* RippleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleEffect.m; sourceTree = "<group>"; };
+		C43F7DFD21209E8900923D97 /* RippleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleEffect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,20 +670,11 @@
 		BD955B3F1DC8F5450045EB47 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				C43F7DFB21209E7E00923D97 /* RippleEffect */,
 				BD955B481DCA40BE0045EB47 /* Shadows */,
 				BD955B471DCA40A10045EB47 /* VisualEffect */,
 			);
 			name = Effects;
-			sourceTree = "<group>";
-		};
-		BD955B451DC9D5AC0045EB47 /* RippleEffect */ = {
-			isa = PBXGroup;
-			children = (
-				BD955B431DC9D5AC0045EB47 /* RippleEffect.h */,
-				BD955B441DC9D5AC0045EB47 /* RippleEffect.m */,
-			);
-			name = RippleEffect;
-			path = ../../../WPL/AudioBook_Streaming/AudioBook;
 			sourceTree = "<group>";
 		};
 		BD955B471DCA40A10045EB47 /* VisualEffect */ = {
@@ -700,7 +691,6 @@
 			children = (
 				BD955B401DC8F5630045EB47 /* EffectsViewController.h */,
 				BD955B411DC8F5630045EB47 /* EffectsViewController.m */,
-				BD955B451DC9D5AC0045EB47 /* RippleEffect */,
 			);
 			name = Shadows;
 			sourceTree = "<group>";
@@ -882,6 +872,15 @@
 			name = WKWebView;
 			sourceTree = "<group>";
 		};
+		C43F7DFB21209E7E00923D97 /* RippleEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C43F7DFD21209E8900923D97 /* RippleEffect.h */,
+				C43F7DFC21209E8900923D97 /* RippleEffect.m */,
+			);
+			name = RippleEffect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -926,7 +925,7 @@
 		9CA39B181CB38CFD003B0ECA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ammini Inc";
 				TargetAttributes = {
 					9CA39B1F1CB38CFD003B0ECA = {
@@ -1028,6 +1027,7 @@
 				BD2F039E1DB8DE7D00163180 /* CustomScrollView.m in Sources */,
 				BD5230381D75760000BA1EA8 /* TaxProcessor.m in Sources */,
 				BD5A81161DCDEFBB0066D3D4 /* PlayerViewController.m in Sources */,
+				C43F7DFE21209E8900923D97 /* RippleEffect.m in Sources */,
 				BDD33B7D1DCF05DA00BAD31B /* KeychainItemWrapper.m in Sources */,
 				BD5230641D7DF07600BA1EA8 /* NetworkCommunication.m in Sources */,
 				BD5A810D1DCDE2550066D3D4 /* ContainerViewController.m in Sources */,
@@ -1044,7 +1044,6 @@
 				BD955B221DC22E650045EB47 /* PinchZoomViewController.m in Sources */,
 				BD2F039B1DB8DD4100163180 /* ScrollViewSampleViewController.m in Sources */,
 				BDC014721D59FAF0007EEF90 /* NSString+StringAdditions.m in Sources */,
-				BD955B461DC9D5AC0045EB47 /* RippleEffect.m in Sources */,
 				BDC830FA1CE343C90015DB42 /* SimpleTableViewController.m in Sources */,
 				BD955B421DC8F5630045EB47 /* EffectsViewController.m in Sources */,
 				BDED62051D9CCCE40067AA38 /* WKWebViewController.m in Sources */,
@@ -1107,13 +1106,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1150,13 +1157,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
