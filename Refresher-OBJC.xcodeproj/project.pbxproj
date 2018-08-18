@@ -87,6 +87,8 @@
 		BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13D1CC9F59B003B3A09 /* localHtmlSample.html */; };
 		BDEDE1401CC9FC35003B3A09 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = BDEDE13F1CC9FC35003B3A09 /* Notes */; };
 		C43F7DFE21209E8900923D97 /* RippleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = C43F7DFC21209E8900923D97 /* RippleEffect.m */; };
+		F81757232128A54D00FD151D /* documentInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81757212128A54D00FD151D /* documentInteractionViewController.m */; };
+		F81757252128A69200FD151D /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F81757242128A69200FD151D /* sample.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +252,9 @@
 		BDEDE13F1CC9FC35003B3A09 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		C43F7DFC21209E8900923D97 /* RippleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleEffect.m; sourceTree = "<group>"; };
 		C43F7DFD21209E8900923D97 /* RippleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleEffect.h; sourceTree = "<group>"; };
+		F81757212128A54D00FD151D /* documentInteractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = documentInteractionViewController.m; sourceTree = "<group>"; };
+		F81757222128A54D00FD151D /* documentInteractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = documentInteractionViewController.h; sourceTree = "<group>"; };
+		F81757242128A69200FD151D /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +345,7 @@
 				BD5A810A1DCDE2160066D3D4 /* Container View */,
 				BD5A810E1DCDEC390066D3D4 /* AudioVideo */,
 				BDB844481DDB217D00EC978F /* Segues */,
+				F81757202128A4ED00FD151D /* UIDocumentInteraction */,
 			);
 			name = "UI Controls";
 			sourceTree = "<group>";
@@ -497,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB8444F1DDB265000EC978F /* Assets.xcassets */,
+				F81757242128A69200FD151D /* sample.pdf */,
 				BD5A81191DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 */,
 				BD734AE61D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf */,
 			);
@@ -881,6 +888,15 @@
 			name = RippleEffect;
 			sourceTree = "<group>";
 		};
+		F81757202128A4ED00FD151D /* UIDocumentInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				F81757222128A54D00FD151D /* documentInteractionViewController.h */,
+				F81757212128A54D00FD151D /* documentInteractionViewController.m */,
+			);
+			name = UIDocumentInteraction;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -973,6 +989,7 @@
 				BD5A811A1DCE623B0066D3D4 /* Loop 01- Dreamy.mp3 in Resources */,
 				BDD1A78A1DDF1FB40036B564 /* html5Video.html in Resources */,
 				BD734AE71D95379E00D8C0F7 /* 5MB_UPLOAD_FILE.pdf in Resources */,
+				F81757252128A69200FD151D /* sample.pdf in Resources */,
 				BDEDE13E1CC9F59B003B3A09 /* localHtmlSample.html in Resources */,
 				BDB844501DDB265000EC978F /* Assets.xcassets in Resources */,
 				9CA39B311CB38CFD003B0ECA /* Main.storyboard in Resources */,
@@ -1012,6 +1029,7 @@
 				BD955B261DC73C320045EB47 /* PinchZoomGestureViewController.m in Sources */,
 				BDC014A11D5B0902007EEF90 /* NotificationSample.m in Sources */,
 				9CA39B4F1CB3A9CD003B0ECA /* WebViewRemoteLoadViewController.m in Sources */,
+				F81757232128A54D00FD151D /* documentInteractionViewController.m in Sources */,
 				BD955B531DCB2D0B0045EB47 /* Utilities.m in Sources */,
 				9CA39B251CB38CFD003B0ECA /* main.m in Sources */,
 				BDC014B61D5B2C05007EEF90 /* Student.m in Sources */,
